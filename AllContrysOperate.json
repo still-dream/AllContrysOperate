@@ -1,0 +1,2665 @@
+{
+  "SGP": {
+    "name": "新加坡",
+    "account": "testjind2",
+    "password": "Admin123",
+    "networkCode": "5 CSL A",
+    "HTTP Request Defaults": "https://demogw.jtexpress.sg",
+    "headers": {
+      "user-agent": "Android-OPPO PFTM20/app_out",
+      "content-type": "application/json; charset=utf-8",
+      "authtoken": "b6544df421c44abc8081c49313d0bf3a"
+    },
+    "globalparam": {
+      "waybillId": "JTTT202674716167",
+      "orderId": "2023306842289",
+      "userId": "50449589",
+      "scanNetworkTypeId": "336",
+      "scanNetworkTypeName": "网点",
+      "deliveryName": "testjind2",
+      "deliveryCode": "testjind2",
+      "deliveryBy": "50449589",
+      "signCode": "QS005",
+      "signId": "50449589",
+      "signer": "testjind2",
+      "signuserId": "50449589",
+      "userIdzx": "50449593",
+      "scanTime": "2026-04-15 13:09:06"
+    },
+    "login": {
+      "url": "/bc/out/loginNew",
+      "method": "POST",
+      "param": {
+        "password": "e64b78fc3bc91bcbc7dc232ba8ec59e0",
+        "account": "${account}",
+        "macAddr": "WA-e5d7af0ff73691d"
+      }
+    },
+    "scanTypes": {
+      "揽收扫描": {
+        "url": "/bc/scanList/uploadExpressCollectionData",
+        "method": "POST",
+        "param": [
+          {
+            "checkOrderExist": 0,
+            "electronicSignaturePicUrl": "aza365low/lite-ylappbc/PROBLEM_REGISTER/20241025/WA_pdwd2-8370-pdwd2-1729839421052-b259_de48bc29bab14815b3a6a7994cfaede4.jpg",
+            "hasDelete": false,
+            "hasUpload": false,
+            "latitude": "31.220365",
+            "listId": "CSL02088820250815194023503",
+            "longitude": "121.209031",
+            "orderId": "${orderId}",
+            "picUrl": "aza365low/lite-ylappbc/PROBLEM_REGISTER/20241025/WA_pdwd2-2979-1729590906112759 (1)_d4e8831726914e7aafb92855016f43bd.jpg,aza365low/lite-ylappbc/PROBLEM_REGISTER/20241025/WA_pdwd2-6918-1729590906112759 (1) (1)_969400f033244a74a45b4a22888fa64b.jpg",
+            "scanNetworkCity": "Singapore",
+            "scanNetworkContact": "+65-89001920",
+            "scanNetworkProvince": "Singapore",
+            "scanNetworkTypeId": "${scanNetworkTypeId}",
+            "scanNetworkTypeName": "${scanNetworkTypeName}",
+            "scanPda": "WA-f8ffaa231ca2eb0",
+            "scanTime": "${scanTime}",
+            "userId": "${userId}",
+            "waybillId": "${waybillId}"
+          }
+        ]
+      },
+      "发件扫描": {
+        "url": "/bc/scanList/uploadSendData",
+        "method": "POST",
+        "param": [
+          {
+            "arriveScanType": "1",
+            "hasDelete": false,
+            "hasUpload": false,
+            "id": 1,
+            "listId": "CSL02088820250815203516394",
+            "nextStopCode": "01",
+            "nextStopId": "257",
+            "nextStopName": "01POINT",
+            "nextStopType": "网点",
+            "nextStopTypeId": "336",
+            "scanNetworkCity": "Singapore",
+            "scanNetworkContact": "+65-89001920",
+            "scanNetworkProvince": "Singapore",
+            "scanNetworkTypeId": "${scanNetworkTypeId}",
+            "scanNetworkTypeName": "${scanNetworkTypeName}",
+            "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+            "scanTime": "${scanTime}",
+            "userId": "${userId}",
+            "waybillId": "${waybillId}"
+          }
+        ]
+      },
+      "网点-中心入库扫描": {
+        "url": "/bc/scanList/uploadUnloadingArrivalData",
+        "method": "POST",
+        "param": [
+          {
+            "carNumber": "",
+            "hasDelete": false,
+            "hasUpload": false,
+            "id": 1,
+            "listId": "CSL02088820250815203947185",
+            "networkId": "193",
+            "scanNetworkCity": "Singapore",
+            "scanNetworkContact": "+65-89001920",
+            "scanNetworkProvince": "Singapore",
+            "scanNetworkTypeId": "${scanNetworkTypeId}",
+            "scanNetworkTypeName": "${scanNetworkTypeName}",
+            "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+            "scanTime": "${scanTime}",
+            "scanType": "1",
+            "scanTypeCode": "92",
+            "taskCode": "",
+            "transportTypeCode": "02",
+            "transportTypeId": "22",
+            "transportTypeName": "Road Transportation",
+            "userId": "${userId}",
+            "waybillId": "${waybillId}",
+            "waybillInputType": "1",
+            "weightFlag": 0
+          }
+        ]
+      },
+      "中心-中心入库扫描": {
+        "url": "/bc/scanList/uploadUnloadingArrivalData",
+        "method": "POST",
+        "param": [
+          {
+            "carNumber": "",
+            "hasDelete": false,
+            "hasUpload": false,
+            "id": 4,
+            "listId": "11000020250904085120321",
+            "networkId": "135",
+            "scanNetworkCity": "Singapore",
+            "scanNetworkContact": "0525950808",
+            "scanNetworkProvince": "Singapore",
+            "scanNetworkTypeId": "335",
+            "scanNetworkTypeName": "中心",
+            "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+            "scanTime": "${scanTime}",
+            "scanType": "1",
+            "scanTypeCode": "90",
+            "taskCode": "",
+            "transportTypeCode": "02",
+            "transportTypeId": "22",
+            "transportTypeName": "Road Transportation",
+            "userId": "${userIdzx}",
+            "waybillId": "${waybillId}",
+            "waybillInputType": "1",
+            "weightFlag": 0
+          }
+        ]
+      },
+      "建包扫描": {
+        "url": "/bc/scanList/uploadPackData",
+        "method": "POST",
+        "param": [
+          {
+            "detailList": [
+              {
+                "listId": "CSL02088820250816073653198",
+                "packageNumber": "${packageNumber}",
+                "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+                "scanTime": "${scanTime}",
+                "waybillId": "${waybillId}"
+              }
+            ],
+            "master": {
+              "listId": "CSL02088820250816073653198",
+              "packageNumber": "${packageNumber}",
+              "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+              "scanTime": "${scanTime}"
+            }
+          }
+        ]
+      },
+      "拆包扫描": {
+        "url": "/bc/scanList/uploadAirUnpackData",
+        "method": "POST",
+        "param": [
+          {
+            "diffenceFlag": true,
+            "hasDelete": false,
+            "hasUpload": false,
+            "id": 1,
+            "listId": "11000020250904090519547",
+            "packageNumber": "${packageNumber}",
+            "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+            "scanTime": "${scanTime}",
+            "userId": "${userId}",
+            "waybillId": "${waybillId}"
+          }
+        ]
+      },
+      "问题件登记": {
+        "url": "/bc/scanList/uploadAbnormalPieceData",
+        "method": "POST",
+        "param": [
+          {
+            "probleTypeId": "${probleTypeId}",
+            "scanNetworkProvince": "Singapore",
+            "probleDescription": "主流程脚本",
+            "probleTypeSubjectCode": "${probleTypeSubjectCode}",
+            "probleTypeName": "${probleTypeName}",
+            "scanTime": "${scanTime}",
+            "latitude": "31.22023",
+            "scanNetworkTypeId": "${scanNetworkTypeId}",
+            "abnormalPieceCode": "${abnormalPieceCode}",
+            "listId": "CSL02088820250816074639977",
+            "probleTypeSubjectId": "${probleTypeSubjectId}",
+            "probleTypeSubjectName": "${probleTypeSubjectName}",
+            "scanPda": "NC-224e617a2e1ac855ef51aa6090aebbc6",
+            "paths": "",
+            "scanNetworkContact": "+65-89001920",
+            "scanNetworkTypeName": "${scanNetworkTypeName}",
+            "scanNetworkCity": "Singapore",
+            "waybillNo": "${waybillId}",
+            "longitude": "121.209061"
+          }
+        ]
+      },
+      "派件扫描": {
+        "url": "/bc/scanList/uploadDeliveryOutStockData",
+        "method": "POST",
+        "param": [
+          {
+            "codNeed": 1,
+            "deliveryBy": "${deliveryBy}",
+            "deliveryCode": "${deliveryCode}",
+            "deliveryMobile": "+63-012****5678",
+            "deliveryName": "${deliveryName}",
+            "hasDelete": false,
+            "hasUpload": false,
+            "id": 1,
+            "latitude": "31.2203385",
+            "listId": "CSL02088820250815204438035",
+            "longitude": "121.2089395",
+            "orderId": "${orderId}",
+            "scanNetworkCity": "Singapore",
+            "scanNetworkContact": "+65-89001920",
+            "scanNetworkProvince": "Singapore",
+            "scanNetworkTypeId": "${scanNetworkTypeId}",
+            "scanNetworkTypeName": "${scanNetworkTypeName}",
+            "scanPda": "WA-e5d7af0ff73691d",
+            "scanTime": "${scanTime}",
+            "tempWaybillId": "${waybillId}",
+            "userId": "${userId}",
+            "waybillId": "${waybillId}"
+          }
+        ]
+      },
+      "签收扫描": {
+        "url": "/bc/scanList/uploadSigningData",
+        "method": "POST",
+        "param": [
+          {
+            "deliveryMobile": "+63-012****5678",
+            "electronicSignaturePicUrl": "aza180low2555del/lite-ylappbc/SIGNING_SCAN_LIST/20250815/WA_testjind-5770-testjind-1755242579836-4ce6_9c97de93730245d8bd5383bd535e8534.jpg",
+            "latitude": "31.2203385",
+            "listId": "CSL02088820250815152318360",
+            "longitude": "121.2089395",
+            "paidModeCode": "1001",
+            "posId": "",
+            "scanNetworkCity": "Singapore",
+            "scanNetworkContact": "+65-89001920",
+            "scanNetworkProvince": "Singapore",
+            "scanNetworkTypeId": "${scanNetworkTypeId}",
+            "scanNetworkTypeName": "${scanNetworkTypeName}",
+            "scanPda": "WA-e5d7af0ff73691d",
+            "scanTime": "${scanTime}",
+            "sigPicUrl": "aza180low2555del/lite-ylappbc/SIGNING_SCAN_LIST/20250815/WA_testjind_102_1755242370794_8540_85a129a2eae447e6a9b145c2d0aaa571.png,aza180low2555del/lite-ylappbc/SIGNING_SCAN_LIST/20250815/WA_testjind_102_1755242551754_3663_2d8e32b8bdca4b9facb5fc40ee2bf48a.png,aza180low2555del/lite-ylappbc/SIGNING_SCAN_LIST/20250815/WA_testjind_102_1755242561693_3772_463fdf284e1d4e378305d744a723b321.png",
+            "signCode": "${signCode}",
+            "signId": "${signId}",
+            "signName": "Door/Riser/Cabi",
+            "signer": "${signer}",
+            "uploadTime": 1755242598357,
+            "userId": "${signuserId}",
+            "waybillId": "${waybillId}"
+          }
+        ]
+      }
+    }
+  },
+  "thailand": {
+    "name": "泰国",
+    "account": "111503T000136",
+    "password": "Admin123",
+    "networkCode": "111503",
+    "HTTP Request Defaults": "https://demogw.jtexpress.co.th",
+    "headers": {
+      "user-agent": "Android-OPPO PFTM20/app_out",
+      "content-type": "application/json; charset=utf-8",
+      "authtoken": "b6544df421c44abc8081c49313d0bf3a"
+    },
+    "globalparam": {
+      "waybillId": "737181791172",
+      "taskCode": "JBGX25071000001",
+      "scanTime": "2026-04-15 13:09:06"
+    },
+    "login": {
+      "url": "/bccore/in/loginV1",
+      "method": "POST",
+      "param": {
+        "password": "e64b78fc3bc91bcbc7dc232ba8ec59e0",
+        "appDeviceId": "WA-037be0f6fa843a0",
+        "ticket": "",
+        "randstr": "",
+        "account": "${account}",
+        "macAddr": "WA-037be0f6fa843a0"
+      }
+    },
+    "scanTypes": {
+      "揽收扫描": {
+        "url": "/bcupload/scanList/uploadExpressCollectionData",
+        "method": "POST",
+        "param": [
+          {
+            "checkOrderExist": 0,
+            "codMoney": "22",
+            "customerCode": "VIP111501001",
+            "fruitStatus": "2",
+            "hasDelete": false,
+            "hasUpload": false,
+            "high": "0",
+            "insertTimestamp": 1676888041664,
+            "length": "0",
+            "listId": "1115032023-02-20 17:14:01",
+            "orderFrom": "VIP",
+            "packageNumber": "1",
+            "pictureUrl": "",
+            "receiverMobilePhone": "012356759",
+            "receiverName": "在JMS当卖家",
+            "receiverTelphone": "012356759",
+            "scanNetworkCity": "พระประแดง",
+            "scanNetworkContact": "098-262-0755",
+            "scanNetworkProvince": "สมุทรปราการ",
+            "scanNetworkTypeId": "336",
+            "scanNetworkTypeName": "网点",
+            "scanPda": "WCA-83fbbe42a44cd67",
+            "scanTime": "${scanTime}",
+            "senderCityName": "เขตบางรัก",
+            "senderDetailedAddress": "เลขที่ 107 ถนนนเรศ แขวงสี่พระยา เขตบางรัก กรุงเทพมหานคร 10500",
+            "senderMobilePhone": "0824767498",
+            "senderName": "有运费",
+            "senderProvinceName": "กรุงเทพมหานคร",
+            "senderTelphone": "0824767498",
+            "totalFreight": "110.11",
+            "uploadFailSum": 0,
+            "userId": "2946192",
+            "volume": "0.0",
+            "waybillId": "${yundan}",
+            "weight": "2.0",
+            "wide": "0"
+          }
+        ]
+      },
+	 "装车发件": {
+        "url": "/bcupload/scanList/uploadLoadingSendData",
+        "method": "POST",
+        "param": [
+			{
+				"carNumber": "",
+				"hasDelete": false,
+				"hasUpload": false,
+				"id": 26,
+				"isMissort": false,
+				"listId": "11150320260210153458741",
+				"nextStopCode": "CV004",
+				"nextStopId": "4254067",
+				"nextStopName": "CV004",
+				"nextStopType": "网点",
+				"nextStopTypeId": "336",
+				"scanNetworkCity": "เขตบางแค",
+				"scanNetworkProvince": "กรุงเทพมหานคร",
+				"scanNetworkTypeId": "336",
+				"scanNetworkTypeName": "网点",
+				"scanPda": "081a89e1e5a809603288863369b5c9b3",
+				"scanTime": "${scanTime}",
+				"scanType": "1",
+				"taskCode": "${taskCode}",
+				"transportTypeCode": "3",
+				"transportTypeId": "4",
+				"transportTypeName": "ByCar",
+				"userId": "2770848",
+				"waybillId": "${waybillId}",
+				"waybillInputType": "2"
+			}
+		]
+      },
+      "封发车扫描": {
+        "url": "/bcupload/scanList/uploadPackSendData",
+        "method": "POST",
+        "param": [
+		{
+			"carNumber": "22-3333",
+			"carSignNumber": "1111111",
+			"hasDelete": false,
+			"hasUpload": false,
+			"listId": "11150320240823103838556",
+			"localImages": "/storage/emulated/0/Android/data/com.yunlu.thailandin/files/DCIM/NC_111503T000030_60_1724384294077_87ef.png",
+			"pictureUrl": "coa180low365del/lite-ylappbc/DOCUMENT_FFC/20240823/694767863025631251_NC_111503T000030_60_1724384294077_87ef.png",
+			"scanPda": "NC-4158438",
+			"scanTime": "${scanTime}",
+			"taskNo": "${taskCode}",
+			"userId": "3562535"
+		}
+		]
+      },
+      "到解车扫描": {
+        "url": "/bcupload/scanList/uploadUnCarData",
+        "method": "POST",
+        "param": [
+    {
+        "carNumber": "",
+        "carSignNumber": "11111111",
+        "hasDelete": false,
+        "hasUpload": false,
+        "id": 2,
+        "listId": "70000420220923212726145",
+        "scanPda": "d6d50e6991ef19e86c784e3ebb442363",
+        "scanTime": "${scanTime}",
+        "taskCode": "${taskCode}",
+        "userId": "4951601"
+    }
+	]
+      },
+      "到件扫描": {
+        "url": "/bcupload/scanList/uploadUnloadingArrivalData",
+        "method": "POST",
+        "param": [
+    {
+        "carNumber": "",
+        "hasDelete": false,
+        "hasUpload": false,
+        "id": 3,
+        "listId": "70000420220923212452876",
+        "networkId": "298019",
+        "scanNetworkCity": "ห้วยยอด",
+        "scanNetworkContact": "15768723461",
+        "scanNetworkProvince": "ตรัง",
+        "scanNetworkTypeId": "336",
+        "scanNetworkTypeName": "网点",
+        "scanPda": "d6d50e6991ef19e86c784e3ebb442363",
+        "scanTime": "${scanTime}",
+        "scanType": "1",
+        "scanTypeCode": "92",
+        "taskCode": "${taskCode}",
+        "transportTypeCode": "3",
+        "transportTypeId": "4",
+        "transportTypeName": "ByCar",
+        "userId": "4951601",
+        "waybillId": "${waybillId}",
+        "waybillInputType": "1",
+        "weightFlag": 0
+    }
+]
+    },
+      "问题件扫描": {
+        "url": "/bcupload/scanList/uploadAbnormalPieceData",
+        "method": "POST",
+        "param": [
+    {
+        "abnormalPieceCode": "XQJJ249",
+        "address": "上海市华重公路辅路",
+        "hasDelete": false,
+        "hasUpload": false,
+        "id": 3,
+        "insertTimestamp": 1692582126521,
+        "isActive": true,
+        "isAutoUpload": false,
+        "isMustPhoto": false,
+        "isMustRemark": true,
+        "isMustVideo": false,
+        "latAndLng": "31.220434,121.209027",
+        "listId": "1115032023-08-21 08:24:45",
+        "opType": ",1,",
+        "probleDescription": "hjjjdd",
+        "probleTypeId": 2,
+        "probleTypeName": "ผู้ขายขอเปลี่ยนเวลารับพัสดุ(รับ)",
+        "probleTypeSubjectCode": "XQJJ249",
+        "probleTypeSubjectId": 336,
+        "probleTypeSubjectName": "XQJJ249",
+        "reSendDate": "${scanTime}",
+        "scanNetworkCity": "พระประแดง",
+        "scanNetworkContact": "098-262-0755",
+        "scanNetworkProvince": "สมุทรปราการ",
+        "scanNetworkTypeId": "336",
+        "scanNetworkTypeName": "网点",
+        "scanPda": "WA-0f51ebeeb4559e3",
+        "scanTime": "${scanTime}",
+        "uploadFailSum": 0,
+        "userId": 2946192,
+        "waybillNo": "${waybillId}"
+    }
+]
+      },
+      "建包扫描": {
+        "url": "/bcupload/scanList/uploadPackData",
+        "method": "POST",
+        "param": [
+    {
+        "detailList": [
+            {
+                "listId": "70000420220923211954630",
+                "packageNumber": "U910091720",
+                "scanPda": "d6d50e6991ef19e86c784e3ebb442363",
+                "scanTime": "${scanTime}",
+                "waybillId": "${waybillId}"
+            }
+        ],
+        "master": {
+            "listId": "70000420220923211954630",
+            "packageNumber": "B333333333",
+            "scanPda": "d6d50e6991ef19e86c784e3ebb442363",
+            "scanTime": "${scanTime}"
+        }
+    }
+]
+      },
+      "拆包扫描": {
+        "url": "/bcupload/scanList/uploadPackData",
+        "method": "POST",
+        "param": [
+    {
+        "detailList": [
+            {
+                "listId": "70000420220923212217627",
+                "packageNumber": "U910090445",
+                "scanPda": "d6d50e6991ef19e86c784e3ebb442363",
+                "scanTime": "${scanTime}",
+                "waybillId": "${waybillId}"
+            }
+        ],
+        "master": {
+            "listId": "70000420220923212217627",
+            "packageNumber": "B333333333",
+            "scanPda": "d6d50e6991ef19e86c784e3ebb442363",
+            "scanTime": "${scanTime}"
+        }
+    }
+]
+      },
+      "派件扫描": {
+        "url": "/bcupload/scanList/uploadDeliveryOutStockData",
+        "method": "POST",
+        "param": [{
+		"deliveryBy": "295525",
+		"deliveryCode": "111503T000137",
+		"deliveryMobile": "*****5678",
+		"deliveryName": "testjin1",
+		"hasDelete": false,
+		"hasUpload": false,
+		"id": 3,
+		"isTownshipArticles": "0",
+		"listId": "11150320250910104417836",
+		"scanNetworkCity": "สวี",
+		"scanNetworkContact": "098-262-0755",
+		"scanNetworkProvince": "ชุมพร",
+		"scanNetworkTypeId": "336",
+		"scanNetworkTypeName": "网点",
+		"scanPda": "NC-b44c47ee18888a9",
+		"scanTime": "${scanTime}",
+		"userId": "4257240",
+		"waybillId": "${waybillId}"
+}]
+      },
+      "签收扫描": {
+        "url": "/bcupload/scanList/uploadSigningData",
+        "method": "POST",
+        "param": [{
+		"codNeed": "1",
+		"deliveryMobile": "012345678",
+		"electronicSignaturePicUrl": "coa180low365del/lite-ylappbc/SIGNING_SCAN_LIST/20250910/833592499804049458_1757482678387.jpg",
+		"hasUpload": false,
+		"latLng": "31.220346,121.208928",
+		"listId": "1115032025-09-10 12:38:21",
+		"orderSourceCode": "",
+		"paidModeCode": "01",
+		"paidModeId": "27",
+		"paidModeName": "现金",
+		"qualified": 1,
+		"scanNetworkCity": "สวี",
+		"scanNetworkContact": "098-262-0755",
+		"scanNetworkProvince": "ชุมพร",
+		"scanNetworkTypeId": "336",
+		"scanNetworkTypeName": "网点",
+		"scanPda": "WA-037be0f6fa843a0",
+		"scanTime": "${scanTime}",
+		"sigPicUrl": "coa180low365del/lite-ylappbc/SIGNING_SCAN_LIST/20250910/833592454241325105_WA-037be0f6fa843a0_111503T000137_1757482639208.jpeg,coa180low365del/lite-ylappbc/SIGNING_SCAN_LIST/20250910/833592460834770972_WA-037be0f6fa843a0_111503T000137_1757482655568.jpeg,coa180low365del/lite-ylappbc/SIGNING_SCAN_LIST/20250910/833592464257323016_WA-037be0f6fa843a0_111503T000137_1757482666160.jpeg",
+		"signCode": "1",
+		"signId": "70",
+		"signName": "本人签收",
+		"signType": "1",
+		"signer": "testjin1",
+		"totalQualified": 1,
+		"waybillId": "${waybillId}"
+}]
+      }
+    
+}
+},
+  "MALAYSIA": {
+    "name": "马来",
+    "account": "NSN6100009",
+    "password": "Aa123456.",
+    "networkCode": "NSN6100009",
+    "HTTP Request Defaults": "https://demo-bc.jtexpress.my",
+    "headers": {
+      "user-agent": "Android-HUAWEI ANG-AN00/app_out",
+      "content-type": "application/json; charset=utf-8",
+      "authtoken": "4e71002969fcd46813b869e931aedf4b"
+    },
+    "globalparam": {
+      "waybillId": "680908087265720",
+      "taskCode1": "LH987654321",
+      "scanTime": "2026-04-15 13:09:06"
+    },
+    "login": {
+      "url": "/bclogin/out/loginV2",
+      "method": "POST",
+      "param": {
+		"account": "${account}",
+		"appDeviceCode": "Android-31",
+		"appType": "4",
+		"appVersion": "3.7.10",
+		"isVerifyPhone": true,
+		"latitudeAndLongitude": "31.220296,121.209149",
+		"macAddr": "WA-b6ba979e4e5d69f",
+		"password": "4e71002969fcd46813b869e931aedf4b",
+		"platform": "android",
+		"serialnumber": "WA-b6ba979e4e5d69f",
+		"source": "outfield",
+		"verifyType": "2"
+	}
+    },
+    "scanTypes": {
+      "揽收扫描": {
+        "url": "/scanUpload/web/scanList/uploadExpressCollectionData",
+        "method": "POST",
+        "param": [
+		{
+			"id": 2,
+			"listId": "NSN610610817582926",
+			"scanTime": "${scanTime}",
+			"scanPda": "WA-b6ba979e4e5d69f",
+			"waybillId": "${waybillId}",
+			"isOnline": 1,
+			"uploadTime": null,
+			"localPaths": "",
+			"userCode": "NSN6100003",
+			"hasUpload": 0,
+			"hasDelete": 0,
+			"articleTypeCode": null,
+			"high": "",
+			"weight": "6",
+			"wide": "",
+			"length": "",
+			"volume": "0",
+			"quickPrint": null,
+			"collectionPicUrl": "",
+			"optCoordinate": "31.220279,121.209592",
+			"destinationName": "",
+			"destinationCode": "",
+			"destinationId": null
+		}
+	]
+      },
+	 "装车发件": {
+        "url": "/scanUpload/web/scanList/uploadLoadingSendData",
+        "method": "POST",
+        "param": [
+		{
+			"id": 2,
+			"listId": "NSN6100003${waybillId}",
+			"scanTime": "${scanTime}",
+			"scanPda": "WA-b6ba979e4e5d69f",
+			"isOnline": 1,
+			"uploadTime": null,
+			"hasUpload": 0,
+			"hasDelete": 0,
+			"userCode": "NSN6100003",
+			"waybillId": "${waybillId}",
+			"scanType": 1,
+			"nextStopId": 183806,
+			"nextStopCode": "PJS900",
+			"nextStopName": "KLANG_GATEWAY",
+			"packageNumber": null,
+			"taskCode": "${taskCode1}",
+			"carNumber": "683673"
+		}
+	]
+      },
+      "到件扫描": {
+        "url": "/scanUpload/web/scanList/uploadUnloadingArrivalData",
+        "method": "POST",
+        "param": [
+		{
+			"id": 1,
+			"listId": "NSN6100003680908087265720",
+			"scanTime": "${scanTime}",
+			"scanPda": "WA-b6ba979e4e5d69f",
+			"isOnline": 1,
+			"uploadTime": null,
+			"hasUpload": 0,
+			"hasDelete": 0,
+			"userCode": "NSN6100003",
+			"waybillId": "680908087265720",
+			"scanType": 1,
+			"transportTypeCode": null,
+			"shiftCode": null,
+			"packageNumber": null,
+			"preStopId": 174391,
+			"preStopCode": "SBW501",
+			"preStopName": "AIR SIBU 501",
+			"taskCode": "${taskCode1}",
+			"scanTypeCode": "92"
+		}
+	]
+    },
+      "问题件扫描": {
+        "url": "/scanUpload/web/scanList/uploadAbnormalPieceData",
+        "method": "POST",
+        "param": [
+    {
+        "id": 1,
+        "listId": "NSN6100003${waybillId}",
+        "scanTime": "${scanTime}",
+        "scanPda": "WA-b6ba979e4e5d69f",
+        "isOnline": 1,
+        "uploadTime": null,
+        "hasUpload": 0,
+        "hasDelete": 0,
+        "userCode": "KDH0059898",
+        "waybillId": "${waybillId}",
+        "localPaths": "/data/user/0/com.jt.express.malaysia.outfield/files/1743491601465.png",
+        "waybillNo": "${waybillId}",
+        "abnormalPieceCode": "P2",
+        "problemCause": "Membatalkan pengiriman",
+        "probleDescription": "Membatalkan pengiriman",
+        "secondReason": null,
+        "paths": "osa180low365del/lite-ylappbc/question/20250401/KDH0059898_1743491601465.png",
+        "manifestUrl": null,
+        "optCoordinate": "31.220353,121.209478",
+        "problemMark": null,
+        "problemRemark": ""
+    }
+]
+      },
+      "派件扫描": {
+        "url": "/scanUpload/web/scanList/uploadDeliveryOutStockData",
+        "method": "POST",
+        "param": [
+    {
+        "id": 1,
+        "listId": "NSN6100003${waybillId}",
+        "scanTime": "${scanTime}",
+        "scanPda": "WA-b6ba979e4e5d69f",
+        "waybillId": "${waybillId}",
+        "isOnline": 1,
+        "uploadTime": null,
+        "localPaths": null,
+        "userCode": "NSN6100003",
+        "hasUpload": 0,
+        "hasDelete": 0,
+        "deliveryBy": null,
+        "deliveryCode": "NSN6100003",
+        "deliveryName": "WTT",
+        "deliveryThirdCode": null,
+        "deliveryStaffCode": null
+    }
+]
+      },
+      "签收扫描": {
+        "url": "/scanUpload/web/scanList/uploadSigningData",
+        "method": "POST",
+        "param": [
+    {
+        "id": null,
+        "listId": "NSN6100003${waybillNo}",
+        "scanTime": "${scanTime}",
+        "scanPda": "WA-b6ba979e4e5d69f",
+        "waybillId": "${waybillId}",
+        "isOnline": 1,
+        "uploadTime": null,
+        "userCode": "NSN6100003",
+        "hasUpload": 0,
+        "hasDelete": 0,
+        "signer": "enh6",
+        "paidModeCode": "CASH",
+        "localPaths": "/data/user/0/com.jt.express.malaysia.outfield/files/1743409144564.png,/data/user/0/com.jt.express.malaysia.outfield/files/1743409149172.png",
+        "sigPicUrl": "osa180low365del/lite-ylappbc/scan_sign/20250331/NSN6100003_1743409144564.png,osa180low365del/lite-ylappbc/scan_sign/20250331/NSN6100003_1743409149172.png",
+        "optCoordinate": "31.220336,121.209205",
+        "signType": "Penerima Sendiri"
+    }
+]
+      }
+    
+}
+},
+"VIETNAM": {
+    "name": "越南",
+    "account": "0848882027",
+    "password": "afdd0b4ad2ec172c586e2150770fbf9e",
+    "networkCode": "",
+    "HTTP Request Defaults": "https://demogw.jtexpress.vn",
+    "headers": {
+      "app-version": "2.0.104",
+      "app-platform": "Android_com.jt.express.vietnam.outfield",
+      "timestamp": "1680675466972",
+      "signature": "Njk5N0VERkNCRUIyNjkxREUwNEY0RUQ3QzlBQ0QzOTk=",
+      "user-agent": "Android-HUAWEImate30 TAS-AL100/app_out",
+      "device-version": "Android-25",
+      "device-id": "WA-869fe14e58bee41",
+      "userid": "2233508",
+      "content-type": "application/json;charset=UTF-8",
+      "authtoken": "2bb21c378cba4ead95479d55c64f6a6b",
+      "routename": "branchTaskNew"
+    },
+    "globalparam": {
+      "waybillId": "",
+	  "taskCode1": "SRTR22302630620111",
+      "scanTime": "2026-04-20 10:42:22",
+	  "packageNumber":"B000011404",
+	  "carSignNumber":"51A·123·45"
+    },
+    "login": {
+      "url": "bclogin/out/loginAppDevice",
+      "method": "POST",
+      "param": {
+        "account": "${account}",
+        "appDeviceId": "WA-e6ef32e3226795c",
+        "appDeviceNum": "WA-e6ef32e3226795c",
+        "macAddr": "",
+        "password": "afdd0b4ad2ec172c586e2150770fbf9e"
+      }
+    },
+    "scanTypes": {
+		"新建运单": {
+        "url": "/bc/waybillOrder/save",
+        "method": "POST",
+        "param": {
+		  "id": null,
+		  "idNo": null,
+		  "idNoType": null,
+		  "sex": null,
+		  "realName": null,
+		  "customerOrderId": null,
+		  "orderSourceName": null,
+		  "orderSourceCode": null,
+		  "orderTypeCode": null,
+		  "waybillId": null,
+		  "senderName": "Nguyễn Thị Châu Đoan",
+		  "senderCompany": null,
+		  "senderMobilePhone": "0983110072",
+		  "senderTelphone": "0983110072",
+		  "senderCountryName": null,
+		  "dispatchNetworkTime": null,
+		  "senderCountryId": null,
+		  "senderProvinceName": "Hồ Chí Minh",
+		  "senderProvinceCode": 74,
+		  "senderProvinceId": 74,
+		  "senderCityName": "Quận 1",
+		  "senderCityCode": 234,
+		  "senderCityId": 234,
+		  "senderAreaName": "Phường Bến Thành-028QQ102",
+		  "senderAreaCode": "028QQ102",
+		  "senderAreaId": 2555,
+		  "senderTownship": null,
+		  "senderStreet": null,
+		  "senderPostalCode": null,
+		  "receiverName": "Nguyễn Hồ Hồng Ngân",
+		  "receiverTelphone": "0983110072",
+		  "receiverCountryId": null,
+		  "receiverProvinceName": "Hà Nội",
+		  "receiverProvinceCode": 82,
+		  "receiverProvinceId": 82,
+		  "receiverCityName": "Huyện Mê Linh",
+		  "receiverCityCode": 369,
+		  "receiverCityId": 369,
+		  "receiverAreaName": "Thị trấn Quang Minh-024HML02",
+		  "receiverAreaId": 8218,
+		  "receiverAreaCode": "024HML02",
+		  "receiverTownship": null,
+		  "receiverStreet": null,
+		  "receiverDetailedAddress": "YRRR3333",
+		  "receiverPostalCode": null,
+		  "receiverSortingCode": null,
+		  "remarks":"随机数备注33.123}",
+		  "expressTypeCode": 1,
+		  "codNeed": 1,
+		  "codFee": 0,
+		  "orderStatusCode": null,
+		  "orderStatusName": null,
+		  "paidModeName": "现金",
+		  "paidModeCode": "01",
+		  "paidModeId": 124,
+		  "senderDetailedAddress": "YRDY11",
+		  "receiverCompany": null,
+		  "receiverMobilePhone": "0983110072",
+		  "receiverCountryName": null,
+		  "sendName": null,
+		  "sendCode": "01",
+		  "expressTypeId": 27,
+		  "expressTypeName": "EXPRESS",
+		  "insured": 0,
+		  "declaredValue": null,
+		  "insuredValue": null,
+		  "dispatchName": "派送上门",
+		  "dispatchCode": "03",
+		  "boxStandardName": null,
+		  "boxStandardId": null,
+		  "boxStandardCode": null,
+		  "codCurrencyTypeName": null,
+		  "codCurrencyTypeCode": null,
+		  "goodsTypeName": "HÀNG HÓA",
+		  "goodsTypeId": 20,
+		  "goodsTypeCode": "bm000010",
+		  "goodsName": "TTTT",
+		  "packageNumber": 1,
+		  "partSign": 0,
+		  "packageLength":30,
+		  "packageWide":23,
+		  "packageHigh":30,
+		  "packageVolume":3.45,
+		  "packateVolume": null,
+		  "packageChargeWeight":3.45,
+		  "packageTotalVolume": 3.45,
+		  "packageTotalWeight":2.5,
+		  "paymentModeName": "PP_CASH",
+		  "paymentModeId": 7,
+		  "paymentModeCode": "PP_CASH",
+		  "customerId": 236093,
+		  "customerCode": "LC00001010",
+		  "customerName": "CTy Test",
+		  "spmMoneyType": null,
+		  "cancelReason": null,
+		  "pickFailReason": null,
+		  "prStringNumber": null,
+		  "realPickNetworkName": null,
+		  "realPickNetworkCode": null,
+		  "pickNetworkName": null,
+		  "pickNetworkCode": null,
+		  "pickStaffName": null,
+		  "pickStaffCode": null,
+		  "dispatchNetworkReason": null,
+		  "senderEmail": null,
+		  "receiverEmail": null,
+		  "inputTime": null,
+		  "totalFreight": null,
+		  "handicraftFee": null,
+		  "standardValue": 20000.0,
+		  "codMoney": "33.12}",
+		  "boxNumber": null,
+		  "boxPrice": null,
+		  "abnormalPieceName": null,
+		  "settlementWeight": null,
+		  "isBusiness": null,
+		  "signReceipt": null,
+		  "senderAddressInfos": null,
+		  "recvAddressInfos": null,
+		  "destinationId": 38362,
+		  "destinationCode": "024HML02",
+		  "destinationName": "Thị trấn Quang Minh-024HML02",
+		  "originId": 28665,
+		  "originCode": "028QQ102",
+		  "originName": "Phường Bến Thành-028QQ102",
+		  "printerCounterfoil": null,
+		  "receiptFreight": null,
+		  "showCycleBoxNo": null,
+		  "customerCategory": null,
+		  "canCancel": null,
+		  "amountAfterTax": null,
+		  "needReturnFreightFee": null,
+		  "transportTypeCode": "ET",
+		  "grabFee": null,
+		  "transportTypeName": "ET",
+		  "staffLngLat": "13.223489761352539,108.54102325439453",
+		  "freight": 20000.0,
+		  "insuredAmount": null,
+		  "insuredFee": 0,
+		  "goodsUrl": "",
+		  "packageCost": null,
+		  "isScanCodeSend": null,
+		  "isPaper": 0,
+		  "collectStaffCode": 2239165,
+		  "collectStaffName": "12312312313",
+		  "deliveryTime": "${scanTime}",
+		  "inAndSendScan": null,
+		  "isNeedReceipt": null,
+		  "isRealName": null,
+		  "isReceiveAddrModify": null,
+		  "isThirdStandard": null,
+		  "receivePayFee": null,
+		  "scanNetworkCity": "Quận 1",
+		  "scanNetworkContact": "一级网点",
+		  "scanNetworkProvince": "Hồ Chí Minh",
+		  "scanNetworkTypeId": 336,
+		  "scanNetworkTypeName": "一级网点",
+		  "scanPda": "WA-e6ef32e3226795c",
+		  "settlementId": 7,
+		  "settlementCode": "PP_CASH",
+		  "settlementName": "PP_CASH",
+		  "traceId": 580660972110376214,
+		  "useHandicraft": null,
+		  "listId": "0848882023-12-20 13:42:19",
+		  "imgUrl": "",
+		  "scanTime": "${scanTime}",
+		  "otherFee": null,
+		  "goodsValue": null,
+		  "highItemValueFee": null,
+		  "isPartialReceipt": null,
+		  "bestPickTimeStart": null,
+		  "bestPickTimeEnd": null,
+		  "updateTime": null,
+		  "taxFee": 2528.0,
+		  "remoteFee": 4600,
+		  "taxAfterFee": 34128,
+		  "fuelOilFee": 3000,
+		  "commission": 20000.0,
+		  "discountFee": 0,
+		  "standardTotalFreight": 31600.0,
+		  "overWeight": 4000,
+		  "vunNumber": 0,
+		  "weight": null,
+		  "length": null,
+		  "wide": null,
+		  "high": null
+		}
+      },
+      "快件揽收": {
+        "url": "/bcupload/scanList/uploadExpressCollectionData",
+        "method": "POST",
+        "param": [
+          {
+            "id": 2,
+            "waybillId": "${waybillId}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-e6ef32e3226795c",
+            "listId": "0848882023-10-11 09:38:27",
+            "uploadTime": null,
+            "hasUpload": false,
+            "hasDelete": false,
+            "userId": 2239165,
+            "scanNetworkContact": "12312312313",
+            "scanNetworkTypeName": "一级网点",
+            "scanNetworkTypeId": 336,
+            "scanNetworkCity": "Quận 1",
+            "scanNetworkProvince": "Hồ Chí Minh",
+            "checkOrderExist": 0,
+            "weight": 1,
+            "length": null,
+            "wide": null,
+            "high": null,
+            "volume": null,
+            "pictureUrl": "",
+            "orderFrom": null,
+            "customerCode": null,
+            "fruitStatus": null,
+            "uploadFailSum": null,
+            "insertTimestamp": 1696992224565,
+            "destinationCode": "",
+            "expressTypeCode": 1,
+            "articleTypeCode": "bm000010",
+            "localPaths": "",
+            "paths": "",
+            "imgUrl": "",
+            "staffLngLat": "13.223489761352539,108.54102325439453",
+            "senderName": null,
+            "senderMobilePhone": null,
+            "senderTelphone": null,
+            "senderProvinceName": null,
+            "senderCityName": null,
+            "senderAreaName": null,
+            "senderDetailedAddress": null,
+            "senderPostalCode": null,
+            "receiverName": null,
+            "receiverMobilePhone": null,
+            "receiverTelphone": null,
+            "codMoney": null,
+            "totalFreight": null,
+            "packageNumber": null
+          }
+        ]
+      },
+      "封发车扫描": {
+        "url": "/bc/scanList/uploadPackSendData",
+        "method": "POST",
+        "param": [
+          {
+            "id": 1,
+            "listId": "0848882024-07-01 15:43:19",
+            "scanByCode": null,
+            "scanTime": "${scanTime}",
+            "lineNumber": "0848888888811500",
+            "carNumber": null,
+            "scanPda": "WA-853c233d10be76e",
+            "waybillId": null,
+            "nextStopCode": null,
+            "shiftCode": null,
+            "destinationCode": null,
+            "nextStopId": null,
+            "packageNumber": null,
+            "unloadType": null,
+            "carSignNumber": "6183452",
+            "scanNetworkId": null,
+            "scanNetworkCode": null,
+            "taskNo": "SRTR22401642320",
+            "dataCollectionTime": null,
+            "hasUpload": null,
+            "hasDelete": null,
+            "staffLngLat": null,
+            "userId": 3274477,
+            "paths": "mic180low/yl-web-jmsvn-app-bc/scan_send_car/20240701/MLJDD8gTJz_WA_50_6123458_1719823600922555_5065.png",
+            "updateToCollect": true
+          }
+        ]
+      },
+      "装车发件": {
+        "url": "bcupload/scanList/uploadLoadingSendData",
+        "method": "POST",
+        "param": [
+          {
+            "id": "9",
+            "listId": "0848882023-04-13",
+            "scanNetworkCode": "",
+            "waybillId": "${waybillId}",
+            "nextStopCode": "204A03",
+            "scanTime": "${scanTime}",
+            "operatorCode": "",
+            "shiftCode": "",
+            "unloadType": "",
+            "transportTypeCode": "2",
+            "scanPda": "WA-869fe14e58bee41",
+            "taskCode": "${taskCode1}",
+            "lineNumber": "084888028GW01350",
+            "nextStopId": "(BGG) 522 Lê Lợi",
+            "packageNumber": "",
+            "scanByCode": "",
+            "dataCollectionTime": "",
+            "scanNetworkId": "",
+            "carNumber": "",
+            "flightNumber": ""
+          }
+        ]
+      },
+      "卸车到件": {
+        "url": "/bcupload/scanList/uploadUnloadingArrivalData",
+        "method": "POST",
+        "param": [
+          {
+            "scanType": 1,
+            "previousStopId": null,
+            "scanTime": "${scanTime}",
+            "transportTypeCode": "2",
+            "waybillId": "${waybillId}",
+            "packageNumber": null,
+            "arriveScanType": null,
+            "scanByCode": "null",
+            "shiftCode": null,
+            "high": null,
+            "wide": null,
+            "weight": null,
+            "length": null,
+            "scanPda": "WA-869fe14e58bee41",
+            "dataCollectionTime": null,
+            "scanSourceName": null,
+            "scanNetWorkId": null,
+            "listId": "0848882023-04-25 19:20:46",
+            "weightFlag": null,
+            "taskCode": "${taskCode1}",
+            "flightNumber": null,
+            "scanNetWorkCode": null,
+            "previousStopCode": "null",
+            "id": 3,
+            "userId": 2239165,
+            "hasUpload": null,
+            "hasDelete": null
+          }
+        ]
+      },
+      "问题件扫描": {
+        "url": "/bcupload/scanList/uploadAbnormalPieceData",
+        "method": "POST",
+        "param": [
+          {
+            "id": 14,
+            "waybillNo": "${waybillId}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-e6ef32e3226795c",
+            "listId": "4444422023-08-24 17:29:07",
+            "uploadTime": null,
+            "hasUpload": false,
+            "hasDelete": false,
+            "userId": 1544740,
+            "scanNetworkContact": 15768891050,
+            "scanNetworkTypeName": "一级网点",
+            "scanNetworkTypeId": 336,
+            "scanNetworkCity": "Huyện Kiến Thụy",
+            "scanNetworkProvince": "Hải Phòng",
+            "uploadFailSum": null,
+            "abnormalPieceCode": "PTWTJ14",
+            "opType": ",2,3,4,",
+            "localPaths": "/data/user/0/com.jt.express.vietnam.outfield/cache/def_1692873014831.png",
+            "paths": "lite-ylappbc/scan_problem/00d217bbdc6a46fb989b98e8ccea7605.png",
+            "localVideoPath": null,
+            "localVideoThumbnail": null,
+            "videoPaths": "xxxxxxxxxxx",
+            "probleDescription": "",
+            "isMustPhoto": false,
+            "isMustVideo": false,
+            "isMustRemark": false,
+            "isMustProblemDetail": false,
+            "isMustDateTime": false,
+            "problemDetail": "",
+            "anotherDateTime": null,
+            "probleTypeId": 2,
+            "probleTypeName": "Khách từ chối nhận hàng, từ chối trả phí",
+            "probleTypeSubjectCode": "PTWTJ14",
+            "probleTypeSubjectId": 668,
+            "probleTypeSubjectName": "PTWTJ14",
+            "problemPieceClassify": null,
+            "secondReason": "",
+            "secondReasonCode": "",
+            "resendTime": null,
+            "problemCause": "axxxxxxxxxxxxxxxxxxxxxxxx"
+          }
+        ]
+      },
+      "出仓扫描": {
+        "url": "/bcupload/scanList/uploadDeliveryOutStockData",
+        "method": "POST",
+        "param": [
+          {
+            "id": "3",
+            "waybillId": "${waybillId}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-869fe14e58bee41",
+            "listId": "0848882023-04-25 09:32:45",
+            "uploadTime": "null",
+            "hasUpload": "false",
+            "hasDelete": "false",
+            "userId": "2239165",
+            "scanNetworkContact": "12312312313",
+            "scanNetworkTypeName": "一级网点",
+            "scanNetworkTypeId": "336",
+            "scanNetworkCity": "Quận 2",
+            "scanNetworkProvince": "Hồ Chí Minh",
+            "uploadFailSum": "null",
+            "deliveryBy": "2239165",
+            "deliveryCode": "0848882019",
+            "deliveryName": "大钱",
+            "deliveryMobile": "null",
+            "scanSourceCode": "null",
+            "scanSourceName": "null"
+          }
+        ]
+      },
+      "建包扫描": {
+        "url": "/bcupload/scanList/uploadPackData",
+        "method": "POST",
+        "param": [
+          {
+            "master": {
+              "scanTime": "${scanTime}",
+              "scanPda": "WA-e6ef32e3226795c",
+              "listId": "0848882025-04-09 09:53:15",
+              "packageNumber": "${packageNumber}",
+              "unpackingNetworkId": null,
+              "unpackingNetworkCode": null,
+              "unpackingNetworkName": null,
+              "packageWeight": null,
+              "packageLength": null,
+              "packageWide": null,
+              "packageHigh": null,
+              "rfid": null
+            },
+            "detailList": [
+              {
+                "waybillId": "${waybillId}",
+                "scanTime": "${scanTime}",
+                "scanPda": "WA-e6ef32e3226795c",
+                "listId": "0848882025-04-09 09:53:15",
+                "rfid": null,
+                "packageNumber": "${packageNumber}",
+                "appVersion": "2.0.202"
+              }
+            ]
+          }
+        ]
+      },
+      "拆包扫描": {
+        "url": "/bc/scanList/uploadUnpackData",
+        "method": "POST",
+        "param": [
+          {
+            "master": {
+              "scanTime": "${scanTime}",
+              "scanPda": "WA-e6ef32e3226795c",
+              "listId": "0848882023-06-21 16:33:18",
+              "packageNumber": "${packageNumber}"
+            },
+            "detailList": [
+              {
+                "waybillId": "${waybillId}",
+                "scanTime": "${scanTime}",
+                "scanPda": "WAe6ef32e3226795c",
+                "listId": "0848882023-06-21 16:33:18",
+                "packageNumber": "${packageNumber}"
+              }
+            ]
+          }
+        ]
+      },
+      "一键拆袋": {
+        "url": "/bc/scanList/uploadUnpacking",
+        "method": "POST",
+        "param": [
+          {
+            "id": "2",
+            "packageNumber": "${packageNumber}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-e6ef32e3226795c",
+            "hasUpload": "false",
+            "hasDelete": "false",
+            "uploadTime": "null",
+            "userId": "2233508",
+            "listId": "0848882023-06-21 16:42:49"
+          }
+        ]
+      },
+      "入仓扫描": {
+        "url": "/bc/scanList/uploadReceiptData",
+        "method": "POST",
+        "param": [
+          {
+            "id": "1",
+            "waybillId": "${waybillId}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-e6ef32e3226795c",
+            "listId": "0848882023-06-21 16: 55: 38",
+            "uploadTime": "null",
+            "hasUpload": "null",
+            "hasDelete": "null",
+            "userId": "2233508",
+            "scanNetworkContact": "12312312313",
+            "scanNetworkTypeName": "一级网点",
+            "scanNetworkTypeId": "336",
+            "scanNetworkCity": "Quận 1",
+            "scanNetworkProvince": "Hồ Chí Minh",
+            "salesmanId": "2233508",
+            "salesmanCode": "0848882023",
+            "salesmanName": "小钱",
+            "uploadFailSum": "null",
+            "insertTimestamp": "1687341356836"
+          }
+        ]
+      },
+      "盘库扫描": {
+        "url": "/bc/stocktaking/uploadData",
+        "method": "POST",
+        "param": [
+    {
+        "id":null,
+        "waybillId":"${waybillId}",
+        "scanTime":"${scanTime}",
+        "waybillNo":"${waybillId}",
+        "packageNumber":"",
+        "scanPda":"WA-e6ef32e3226795c",
+        "listId":"0848882023-10-11 13:00:57",
+        "uploadTime":"${scanTime}",
+        "hasUpload":false,
+        "hasDelete":false,
+        "userId":2239165,
+        "retDuration":"",
+        "scanNetworkContact":"12312312313",
+        "scanNetworkTypeName":"一级网点",
+        "scanNetworkTypeId":336,
+        "scanNetworkCity":"Quận 1",
+        "scanNetworkProvince":"Hồ Chí Minh"
+    }
+    ]
+      },
+      "快件签收": {
+        "url": "/bcupload/scanList/uploadSigningData",
+        "method": "POST",
+        "param": [
+          {
+            "id": null,
+            "waybillId": "${waybillId}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-e6ef32e3226795c",
+            "listId": "0848882024-03-21 16:57:26",
+            "uploadTime": null,
+            "hasUpload": false,
+            "hasDelete": false,
+            "userId": null,
+            "scanNetworkContact": "12312312313",
+            "scanNetworkTypeName": "一级网点",
+            "scanNetworkTypeId": 336,
+            "scanNetworkCity": "Quận 1",
+            "scanNetworkProvince": "Hồ Chí Minh",
+            "uploadFailSum": null,
+            "deliveryBy": null,
+            "deliveryCode": "0848882019",
+            "deliveryName": null,
+            "deliveryMobile": "+8415225714573",
+            "scanSourceCode": null,
+            "scanSourceName": null,
+            "staffLngLat": "21.315361,104.6707764",
+            "signId": null,
+            "signCode": null,
+            "signName": null,
+            "signer": null,
+            "signing": 0,
+            "signernexus": null,
+            "expressCabinet": null,
+            "stationContact": null,
+            "partnerName": null,
+            "sigPicUrl": ",,,,osb180low365del/yl-web-jmsvn-app-bc/scan_sign/20250410/Y3RyYNpfmO_WA_def_842801585413_1744271875167164_3379.jpg,,,osb180low365del/yl-web-jmsvn-app-bc/scan_sign/20250410/xZydXoXfvj_WA_def_842801585413_1744271935910391_6776.jpg,,",
+            "electronicSignaturePicUrl": "",
+            "scanTypeCode": 100,
+            "paidModeCode": "01",
+            "paidModeId": 124,
+            "paidModeName": "现金",
+            "dataCollectionTime": "${scanTime}",
+            "scanByCode": "0848882019",
+            "partSign": 0,
+            "partSignRemark": ""
+          }
+        ]
+      },
+      "退件签收": {
+        "url": "/bc/scanList/uploadReturnSigningData",
+        "method": "POST",
+        "param": [
+          {
+            "id": 1,
+            "waybillId": "${waybillId}",
+            "scanTime": "${scanTime}",
+            "scanPda": "WA-e6ef32e3226795c",
+            "listId": "0848882023-10-11 10:20:24",
+            "uploadTime": null,
+            "hasUpload": false,
+            "hasDelete": false,
+            "userId": 2239165,
+            "scanNetworkContact": 12312312313,
+            "scanNetworkTypeName": "一级网点",
+            "scanNetworkTypeId": 336,
+            "scanNetworkCity": "Quận 1",
+            "scanNetworkProvince": "Hồ Chí Minh",
+            "uploadFailSum": null,
+            "deliveryBy": null,
+            "deliveryCode": "0848882019",
+            "deliveryName": null,
+            "deliveryMobile": "+84152257451",
+            "scanSourceCode": null,
+            "scanSourceName": null,
+            "staffLngLat": "13.223489761352539,108.54102325439453",
+            "signId": null,
+            "signCode": null,
+            "signName": null,
+            "signer": 1,
+            "signing": 0,
+            "signernexus": "",
+            "expressCabinet": null,
+            "stationContact": null,
+            "partnerName": null,
+            "sigPicUrl": ",,osb180low365del/yl-web-jmsvn-app-bc/scan_sign/20250410/Ge7WrHPJaD_WA_def_842801347265_1744273819340693_3587.jpg,,,osb180low365del/yl-web-jmsvn-app-bc/scan_sign/20250410/Evlz1z6ZdJ_WA_def_842801347265_1744273837163801_8111.jpg,,,",
+            "electronicSignaturePicUrl": null,
+            "scanTypeCode": 301,
+            "paidModeCode": "01",
+            "paidModeId": 124,
+            "paidModeName": "现金",
+            "dataCollectionTime": "${scanTime}",
+            "scanByCode": "0848882019",
+            "partSign": null,
+            "partSignRemark": null
+          }
+        ]
+      }
+    }
+    },
+    "philippines": {
+		"name": "菲律宾",
+		"englishName": "Philippines",
+		"flag": "🇵🇭",
+		"needLogin": true,
+		"account": "4707014027",
+		"password": "Aa1234567",
+		"networkCode": "",
+		"baseUrl": "https://demo-bc.jtexpress.ph",
+		"headers": {
+			"user-agent": "Android-samsung SM-N9860/app_out",
+			"content-type": "multipart/form-data; boundary=e29eed7f-2f0f-4c9d-acd8-b2708ddf1597",
+			"App-Version":"3.1.9.11",
+			"App-Platform":".outfield.",
+			"devicefrom":"android"
+		},
+		"globalparam": {
+			"waybillId":"JT0000007122051",
+			"taskCode1":"",
+			"scanTime":"20251127172500",
+			"packageNumber":"",
+			"carSignNumber":""
+			
+		},
+		"login": { 
+		"url": "/core/login", 
+		"method": "POST", 
+		"param": {"parameter":
+			{
+			"password":"${password}",
+			"phoneKey":"WA-ce69100e475ded6",
+			"rememberPassword":true,
+			"siteCode":"470701",
+			"sourceType":"1",
+			"userCode":"${account}",
+			"versionCode":"3.1.9.11"
+			}
+		} 
+		},
+		"scanTypes": {
+			"揽收扫描": { 
+			"url": "/scanUpload/scanRecordUpload/1", 
+			"method": "POST", 
+			"param": {
+				"parameter":
+					{
+						"phoneKey":"WA-ce69100e475ded6",
+						"scanRecords":[
+							{
+								"id":4,
+								"scanType":"1",
+								"billcode":"${waybillId}",
+								"userCode":"${account}",
+								"siteCode":"470701",
+								"entryTime":"20251127172500",
+								"expressTypeName":"TIKTOK",
+								"expressTypeCode":"92",
+								"itemCategoryCode":null,
+								"itemCategoryName":null,
+								"orderOfClassCode":null,
+								"orderOfClassName":null,
+								"questionTypeCode":null,
+								"questionTypeName":null,
+								"workOrderFlag":null,
+								"leavingReasonCode":null,
+								"leavingReasonName":null,
+								"transportModeCode":null,
+								"transportModeName":null,
+								"weight":null,
+								"remark":null,
+								"sealnumber":null,
+								"carNumber":null,
+								"materialNumber":"",
+								"numberPlate":null,
+								"lngLat":"31.220201,121.209217",
+								"numberPlateCode":null,
+								"lineName":"",
+								"lineCode":"",
+								"singer":null,
+								"signing":null,
+								"signernexus":null,
+								"stationName":null,
+								"stationCode":null,
+								"destinationName":null,
+								"destinationCode":null,
+								"clerkCode":null,
+								"clerkName":null,
+								"selfLiftDate":null,
+								"icCardNumber":null,
+								"setPackage":"",
+								"receivePostcode":null,
+								"latitude":null,
+								"serviceType":null,
+								"paymentType":null,
+								"totalWeight":null,
+								"totalActualWeight":null,
+								"totalVolumnWeight":null,
+								"phoneKey":"WA-ce69100e475ded6",
+								"orderid":null,
+								"volumnWeight":null,
+								"length":null,
+								"width":null,
+								"height":null,
+								"qrCodeNumber":null,
+								"processing":null,
+								"pcnum":null,
+								"mail":"",
+								"imgFile":"true",
+								"imgFile1":"false",
+								"imgFile2":"false",
+								"billCodeInput":"手动",
+								"proPictureFlag":null,
+								"dtime":null,
+								"questionCategory":null,
+								"preciousno":null,
+								"scansite":"470701",
+								"scanoperator":"${account}",
+								"scandatetime":"${scanTime}",
+								"phoneNumber":null,
+								"phoneModel":null,
+								"list":[
+									{
+										"imgUrl":"osa180low365del/SYS_JMS_OPERATING_APP_BC_PH/scan_receipt/20251127/JT0000011445162_temp_image_1764235495707750.jpg",
+										"imgType":"SJTP"
+										}
+										],
+										"deliverStaffCode":null,
+										"deliverStaffThirdCode":null,
+										"commissionStaffCode":"4509010904",
+										"commissionStaffName":"Wayne",
+										"proxyMatchFlag":null,
+										"problemMark":null,
+										"receiptflag":null,
+										"version":"3.1.9.11",
+										"mainBillNo":null,
+										"taskId":null,
+										"taskCode":null,
+										"offline":"0",
+										"inputType":"2",
+										"confirmCollectionFlag":null
+										}
+										]
+										}
+										} 
+			},
+			"发件扫描": { 
+				"url": "/scanUpload/scanRecordUpload/2", 
+				"method": "POST", 
+				"param": {
+					"parameter":
+						{
+							"phoneKey":"WA-ce69100e475ded6",
+							"scanRecords":[
+								{
+									"id":4,
+									"scanType":"2",
+									"billcode":"${waybillId}",
+									"userCode":"${account}",
+									"siteCode":"470701",
+									"entryTime":"20251127174716",
+									"expressTypeName":null,
+									"expressTypeCode":null,
+									"itemCategoryCode":null,
+									"itemCategoryName":null,
+									"orderOfClassCode":null,
+									"orderOfClassName":null,
+									"questionTypeCode":null,
+									"questionTypeName":null,
+									"workOrderFlag":null,
+									"leavingReasonCode":null,
+									"leavingReasonName":null,
+									"transportModeCode":"02",
+									"transportModeName":"Automobile",
+									"weight":null,
+									"remark":null,
+									"sealnumber":null,
+									"carNumber":null,
+									"materialNumber":"",
+									"numberPlate":null,
+									"lngLat":null,
+									"numberPlateCode":null,
+									"lineName":"",
+									"lineCode":"",
+									"singer":null,
+									"signing":null,
+									"signernexus":null,
+									"stationName":"Apalit-1",
+									"stationCode":"201601",
+									"destinationName":null,
+									"destinationCode":null,
+									"clerkCode":null,
+									"clerkName":null,
+									"selfLiftDate":null,
+									"icCardNumber":null,
+									"setPackage":"",
+									"receivePostcode":null,
+									"latitude":null,
+									"serviceType":null,
+									"paymentType":null,
+									"totalWeight":null,
+									"totalActualWeight":null,
+									"totalVolumnWeight":null,
+									"phoneKey":"WA-ce69100e475ded6",
+									"orderid":null,
+									"volumnWeight":null,
+									"length":null,
+									"width":null,
+									"height":null,
+									"qrCodeNumber":null,
+									"processing":null,
+									"pcnum":null,
+									"mail":"",
+									"imgFile":null,
+									"imgFile1":null,
+									"imgFile2":null,
+									"billCodeInput":null,
+									"proPictureFlag":null,
+									"dtime":null,
+									"questionCategory":null,
+									"preciousno":null,
+									"scansite":"470701",
+									"scanoperator":"${account}",
+									"scandatetime":"${scanTime}",
+									"phoneNumber":null,
+									"phoneModel":null,
+									"list":null,
+									"deliverStaffCode":null,
+									"deliverStaffThirdCode":null,
+									"commissionStaffCode":null,
+									"commissionStaffName":null,
+									"proxyMatchFlag":null,
+									"problemMark":null,
+									"receiptflag":null,
+									"version":"3.1.9.11",
+									"mainBillNo":null,
+									"taskId":null,
+									"taskCode":null,
+									"offline":"0",
+									"inputType":"2",
+									"confirmCollectionFlag":null}]}}
+			},
+			"到件扫描": { 
+				"url": "/scanUpload/scanRecordUpload/3", 
+				"method": "POST", 
+				"param": {
+					"parameter":{
+						"phoneKey":"WA-ce69100e475ded6",
+						"scanRecords":[{
+							"id":3,
+							"scanType":"3",
+							"billcode":"${waybillId}",
+							"userCode":"${account}",
+							"siteCode":"470701",
+							"entryTime":"${scanTime}",
+							"expressTypeName":null,
+							"expressTypeCode":null,
+							"itemCategoryCode":null,
+							"itemCategoryName":null,
+							"orderOfClassCode":null,
+							"orderOfClassName":null,
+							"questionTypeCode":null,
+							"questionTypeName":null,
+							"workOrderFlag":null,
+							"leavingReasonCode":null,
+							"leavingReasonName":null,
+							"transportModeCode":"02",
+							"transportModeName":"Automobile",
+							"weight":null,
+							"remark":null,
+							"sealnumber":null,
+							"carNumber":null,
+							"materialNumber":"",
+							"numberPlate":null,
+							"lngLat":null,
+							"numberPlateCode":null,
+							"lineName":"",
+							"lineCode":"",
+							"singer":null,
+							"signing":null,
+							"signernexus":null,
+							"stationName":"Alaminos-2",
+							"stationCode":"240402",
+							"destinationName":null,
+							"destinationCode":null,
+							"clerkCode":null,
+							"clerkName":null,
+							"selfLiftDate":null,
+							"icCardNumber":null,
+							"setPackage":"",
+							"receivePostcode":null,
+							"latitude":null,
+							"serviceType":null,
+							"paymentType":null,
+							"totalWeight":null,
+							"totalActualWeight":null,
+							"totalVolumnWeight":null,
+							"phoneKey":"WA-ce69100e475ded6",
+							"orderid":null,
+							"volumnWeight":null,
+							"length":null,
+							"width":null,
+							"height":null,
+							"qrCodeNumber":null,
+							"processing":null,
+							"pcnum":null,
+							"mail":"",
+							"imgFile":null,
+							"imgFile1":null,
+							"imgFile2":null,
+							"billCodeInput":null,
+							"proPictureFlag":null,
+							"dtime":null,
+							"questionCategory":null,
+							"preciousno":null,
+							"scansite":"470701",
+							"scanoperator":"4707014027",
+							"scandatetime":"20251127175230",
+							"phoneNumber":null,
+							"phoneModel":null,
+							"list":null,
+							"deliverStaffCode":null,
+							"deliverStaffThirdCode":null,
+							"commissionStaffCode":null,
+							"commissionStaffName":null,
+							"proxyMatchFlag":null,
+							"problemMark":null,
+							"receiptflag":null,
+							"version":"3.1.9.11",
+							"mainBillNo":null,
+							"taskId":null,
+							"taskCode":null,
+							"offline":"0",
+							"inputType":"2",
+							"confirmCollectionFlag":null
+							}
+							]
+							}
+							} 
+							},
+			"出仓扫描": { 
+							"url": "/scanUpload/scanRecordUpload/4", 
+							"method": "POST", 
+							"param": {
+								"parameter":{
+								"phoneKey":"WA-ce69100e475ded6",
+								"scanRecords":[{
+									"id":5,
+									"scanType":"4",
+									"billcode":"${waybillId}",
+									"userCode":"${account}",
+									"siteCode":"470701",
+									"entryTime":"${scanTime}",
+									"expressTypeName":null,
+									"expressTypeCode":null,
+									"itemCategoryCode":null,
+									"itemCategoryName":null,
+									"orderOfClassCode":null,
+									"orderOfClassName":null,
+									"questionTypeCode":null,
+									"questionTypeName":null,
+									"workOrderFlag":null,
+									"leavingReasonCode":null,
+									"leavingReasonName":null,
+									"transportModeCode":null,
+									"transportModeName":null,
+									"weight":null,
+									"remark":null,
+									"sealnumber":null,
+									"carNumber":null,
+									"materialNumber":"",
+									"numberPlate":null,
+									"lngLat":"31.220201,121.209209",
+									"numberPlateCode":null,
+									"lineName":"",
+									"lineCode":"",
+									"singer":null,
+									"signing":null,
+									"signernexus":null,
+									"stationName":null,
+									"stationCode":null,
+									"destinationName":null,
+									"destinationCode":null,
+									"clerkCode":"4707014027",
+									"clerkName":"浦东",
+									"selfLiftDate":null,
+									"icCardNumber":null,
+									"setPackage":"",
+									"receivePostcode":null,
+									"latitude":null,
+									"serviceType":null,
+									"paymentType":null,
+									"totalWeight":null,
+									"totalActualWeight":null,
+									"totalVolumnWeight":null,
+									"phoneKey":"WA-ce69100e475ded6",
+									"orderid":null,
+									"volumnWeight":null,
+									"length":null,
+									"width":null,
+									"height":null,
+									"qrCodeNumber":null,
+									"processing":null,
+									"pcnum":null,
+									"mail":"",
+									"imgFile":null,
+									"imgFile1":null,
+									"imgFile2":null,
+									"billCodeInput":null,
+									"proPictureFlag":null,
+									"dtime":null,
+									"questionCategory":null,
+									"preciousno":null,
+									"scansite":"470701",
+									"scanoperator":"4707014027",
+									"scandatetime":"${scanTime}",
+									"phoneNumber":null,
+									"phoneModel":null,
+									"list":null,
+									"deliverStaffCode":"4707016583",
+									"deliverStaffThirdCode":"004",
+									"commissionStaffCode":null,
+									"commissionStaffName":null,
+									"proxyMatchFlag":null,
+									"problemMark":null,
+									"receiptflag":null,
+									"version":"3.1.9.11",
+									"mainBillNo":null,
+									"taskId":null,
+									"taskCode":null,
+									"offline":"0",
+									"inputType":"2",
+									"confirmCollectionFlag":null}]}} 
+								},
+			"建包扫描": { "url": "/scan/pack", "method": "POST", "param": [{ "waybillId": "${waybillId}", "scanTime": "${scanTime}" }] },
+			"拆包扫描": { "url": "/scan/unpack", "method": "POST", "param": [{ "waybillId": "${waybillId}", "scanTime": "${scanTime}" }] },
+			"问题件登记": { "url": "/scan/problem", "method": "POST", "param": [{ "waybillId": "${waybillId}", "scanTime": "${scanTime}" }] },
+			"派件扫描": { "url": "/scan/delivery", "method": "POST", "param": [{ "waybillId": "${waybillId}", "scanTime": "${scanTime}" }] },
+			"签收扫描": { "url": "/scan/sign", "method": "POST", "param": [{ "waybillId": "${waybillId}", "scanTime": "${scanTime}" }] }
+		}
+	},
+			"laos": {
+                "name": "老挝",
+                "account": "77778888",
+                "password": "q1111111.",
+                "networkCode": "77778888",
+                "baseUrl": "https://jmsla-appbc.jnt-express.com.cn",
+                "headers": {
+                    "user-agent": "Android-HUAWEI ANG-AN00/app_out",
+                    "content-type": "application/json; charset=utf-8"
+                },
+                "globalparam": {
+                    "waybillId": "UTLA000000250595",
+                    "taskCode1": "ZXZB26000000611",
+                    "scanTime": "2026-04-15 13:09:06"
+                },
+                "login": {
+                    "url": "/bc/out/loginV2",
+                    "method": "POST",
+                    "param": {
+                        "account": "${account}",
+                        "appDeviceId": "WA-393595a593b1215",
+                        "macAddr": "WA-393595a593b1215",
+                        "password": "481e15d1b6aebca5b99a7be9079ba192",
+                        "serialnumber": "WA-393595a593b1215"
+                    }
+                },
+			"scanTypes": {
+			  "揽收扫描": {
+				"url": "/bc/scanList/uploadExpressCollectionData",
+				"method": "POST",
+				"param": [
+				  {
+					"checkOrderExist": 0,
+					"createWayBillReqBean": null,
+					"customerCode": "J0086000341",
+					"fruitStatus": "2",
+					"hasDelete": false,
+					"hasUpload": false,
+					"high": null,
+					"id": 1,
+					"insertTimestamp": 1776047538255,
+					"length": null,
+					"listId": "20202012026-04-13 10:31:39",
+					"orderFrom": "D02",
+					"pictureUrl": null,
+					"scanNetworkCity": "ຈັນທະບູລີ",
+					"scanNetworkContact": "1590056781",
+					"scanNetworkProvince": "ນະຄອນຫຼວງວຽງຈັນ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "WA-393595a593b1215",
+					"scanTime": "${scanTime}",
+					"uploadFailSum": null,
+					"uploadTime": null,
+					"userId": "8079",
+					"volume": "0.0",
+					"waybillId": "${waybillId}",
+					"weight": "1",
+					"wide": null
+				  }
+				]
+			  },
+			  "装车发件": {
+				"url": "/bc/scanList/uploadLoadingSendData",
+				"method": "POST",
+				"param": [
+				  {
+					"carNumber": "",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 1,
+					"listId": "202020120260413103323782",
+					"nextStopCode": "201988",
+					"nextStopId": "1215984",
+					"nextStopName": "老挝加盟商",
+					"nextStopType": "中心",
+					"nextStopTypeId": "335",
+					"scanNetworkCity": "ຈັນທະບູລີ",
+					"scanNetworkContact": "1590056781",
+					"scanNetworkProvince": "ນະຄອນຫຼວງວຽງຈັນ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "0af9fd5904a91aafb8b3206cab367626",
+					"scanTime": "${scanTime}",
+					"scanType": "1",
+					"taskCode": "${taskCode1}",
+					"transportTypeCode": "3",
+					"transportTypeId": "4",
+					"transportTypeName": "ByCar",
+					"userId": "8079",
+					"waybillId": "${waybillId}",
+					"waybillInputType": "1"
+				  }
+				]
+			  },
+			  "到件扫描": {
+				"url": "/bc/scanList/uploadUnloadingArrivalData",
+				"method": "POST",
+				"param": [
+				  {
+					"carNumber": "",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 2,
+					"listId": "202020120260413103339297",
+					"networkId": "1215985",
+					"preStopCode": "201988",
+					"preStopId": "1215984",
+					"preStopName": "老挝加盟商",
+					"scanNetworkCity": "ຈັນທະບູລີ",
+					"scanNetworkContact": "1590056781",
+					"scanNetworkProvince": "ນະຄອນຫຼວງວຽງຈັນ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "0af9fd5904a91aafb8b3206cab367626",
+					"scanTime": "${scanTime}",
+					"scanType": "1",
+					"scanTypeCode": "92",
+					"taskCode": "${taskCode1}",
+					"transportTypeCode": "3",
+					"transportTypeId": "4",
+					"transportTypeName": "ByCar",
+					"userId": "8079",
+					"waybillId": "${waybillId}",
+					"waybillInputType": "1",
+					"weightFlag": 0
+				  }
+				]
+			  },
+			  "派件扫描": {
+				"url": "/bc/scanList/uploadDeliveryOutStockData",
+				"method": "POST",
+				"param": [
+				  {
+					"waybillId": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-393595a593b1215",
+					"listId": "20202012026-04-13 10:34:25",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": "8079",
+					"scanNetworkContact": "1590056781",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ຈັນທະບູລີ",
+					"scanNetworkProvince": "ນະຄອນຫຼວງວຽງຈັນ",
+					"uploadFailSum": null,
+					"deliveryBy": "8079",
+					"deliveryCode": "77778888",
+					"deliveryName": "张雅媛网点",
+					"deliveryMobile": null,
+					"scanSourceCode": null,
+					"scanSourceName": null
+				  }
+				]
+			  },
+			  "入库扫描": {
+				"url": "/bc/scanList/uploadCabinetPutIntoData",
+				"method": "POST",
+				"param": [
+				  {
+					"waybillId": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-393595a593b1215",
+					"listId": "5000012026-04-13 16:53:11",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": "7683",
+					"scanNetworkContact": "0824767498",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ຈັນທະບູລີ",
+					"scanNetworkProvince": "ນະຄອນຫຼວງວຽງຈັນ",
+					"waybillInputType": null,
+					"localPaths": "/data/user/0/com.jt.express.laos.outfield/cache/1776070447088.jpg",
+					"pictureurl": "osa180low365del/lite-ylappbc/IN_WAREHOUSE/20260413/911555562209642240_WA-393595a593b1215_wc_200_1776070448162_0344.jpg",
+					"pickupCode": "8866-55-0001",
+					"pickUpTime": "${scanTime}"
+				  }
+				]
+			  },
+			  "签收扫描": {
+				"url": "/bc/scanList/uploadSigningData",
+				"method": "POST",
+				"param": [
+				  {
+					"deliveryBy": null,
+					"deliveryCode": null,
+					"deliveryMobile": "888888883",
+					"deliveryName": null,
+					"electronicSignaturePicUrl": "osa180low365del/lite-ylappbc/SIGNING_SCAN_LIST/20260413/911460264825161344_WA-393595a593b1215_wc_100_1776047782868_7289.jpg",
+					"expressCabinet": null,
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": null,
+					"listId": "20202012026-04-13 10:36:35",
+					"paidModeCode": "01",
+					"paidModeId": "27",
+					"paidModeName": "现金支付",
+					"partnerName": null,
+					"scanNetworkCity": "ຈັນທະບູລີ",
+					"scanNetworkContact": "1590056781",
+					"scanNetworkProvince": "ນະຄອນຫຼວງວຽງຈັນ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "WA-393595a593b1215",
+					"scanSourceCode": null,
+					"scanSourceName": null,
+					"scanTime": "${scanTime}",
+					"sigPicUrl": "osa180low365del/lite-ylappbc/SIGNING_SCAN_LIST/20260413/911460298396370560_WA-393595a593b1215_wc_100_1776047790895_3541.jpg",
+					"signCode": "1",
+					"signId": "70",
+					"signName": "本人签收",
+					"signType": "1",
+					"signer": "张雅媛网点",
+					"stationContact": null,
+					"uploadFailSum": null,
+					"uploadTime": null,
+					"userId": null,
+					"waybillId": "${waybillId}"
+				  }
+				]
+			  }
+			}
+		  },
+            "CAMBODIA": {
+			"name": "柬埔寨",
+			"account": "00011122",
+			"password": "Aa123456",
+			"networkCode": "",
+			"HTTP Request Defaults": "https://jmscb-appbc.jnt-express.com.cn",
+			"headers": {
+			  "device-id": "d68a1e9094b3aa4c15e99feecaf0c02f",
+			  "device-version": "Android-27",
+			  "device-name": "SUPOIN PDA",
+			  "app-platform": "Android_com.yunlu.salesman.in",
+			  "user-agent": "Android-SUPOIN PDA/app_in",
+			  "devicefrom": "android",
+			  "app-version": "1.1.2",
+			  "app-channel": "Internal Deliver",
+			  "content-type": "application/json; charset=utf-8",
+			  "connection": "Keep-Alive",
+			  "accept-encoding": "gzip",
+			  "appid": "202100001"
+			},
+			"globalparam": {
+			  "waybillId": "",
+			  "scanTime": "2026-04-20 10:42:22",
+			  "packageNumber":"C256235866",
+			  "carSignNumber":"2536585547",
+			  "taskCode": "2536585547"
+			},
+			"login": {
+			  "url": "/bc/in/login",
+			  "method": "POST",
+			  "param": {
+				"account": "${account}",
+				"appDeviceId": "WA-b6ba979e4e5d69f",
+				"macAddr": "WA-b6ba979e4e5d69f",
+				"password": "afdd0b4ad2ec172c586e2150770fbf9e"
+			  }
+			},
+			"scanTypes": {
+			  "外场-收件扫描": {
+				"url": "/bc/scanList/uploadExpressCollectionData",
+				"method": "POST",
+				"param": [
+				  {
+					"id": 2,
+					"waybillId": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-b6ba979e4e5d69f",
+					"listId": "TTTDP22023-05-05 14:29:32",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": "5525234",
+					"scanNetworkContact": "0231232114",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ក្រុងកំពង់ចាម",
+					"scanNetworkProvince": "ខេត្តកំពង់ចាម",
+					"checkOrderExist": 0,
+					"weight": "1.0",
+					"length": "12",
+					"wide": "13",
+					"high": "14",
+					"volume": "0.36",
+					"pictureUrl": "",
+					"orderFrom": "A009",
+					"customerCode": "J0086000210",
+					"fruitStatus": "2",
+					"uploadFailSum": null,
+					"insertTimestamp": 1683268346687,
+					"senderName": "Mr Sam",
+					"senderMobilePhone": "023444555",
+					"senderTelphone": "023444555",
+					"senderProvinceName": "ខេត្តស្វាយរៀង",
+					"senderCityName": "ស្រុកស្វាយជ្រំ",
+					"senderAreaName": "ឃុំក្រោលគោ",
+					"senderDetailedAddress": "NR51, Oudongk, Cambodia",
+					"senderPostalCode": null,
+					"receiverName": "Mr Sok",
+					"receiverMobilePhone": "012333444",
+					"receiverTelphone": "012333444",
+					"codMoney": "2262",
+					"totalFreight": null,
+					"packageNumber": "86"
+				  }
+				]
+			  },
+			  "外场-问题件扫描": {
+				"url": "/bc/scanList/uploadAbnormalPieceData",
+				"method": "POST",
+				"param": [
+				  {
+					"waybillNo": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-ce69100e475ded6",
+					"listId": "KHGJ042024-08-01 01:53:24",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": 5490883,
+					"scanNetworkContact": "0322423432",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ស្រុកហ្វ័សាន",
+					"scanNetworkProvince": "ខេត្តក្វាងទុង",
+					"uploadFailSum": null,
+					"abnormalPieceCode": "08a",
+					"opType": ",1,2,3,4,",
+					"localPaths": "/storage/emulated/0/yunlu/images/1722413273540.jpg,/storage/emulated/0/Pictures/1722427792851.jpg,/storage/emulated/0/Pictures/1721698402933.jpg",
+					"paths": "osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686874681868816435_WA-ce69100e475ded6_wc_120_1722502424183_4255.jpg,osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686874686289612828_WA-ce69100e475ded6_wc_120_1722502425285_2993.jpg,osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686874692790784011_WA-ce69100e475ded6_wc_120_1722502426704_9740.jpg",
+					"localVideoPath": null,
+					"localVideoThumbnail": null,
+					"videoPaths": null,
+					"probleDescription": "",
+					"isMustPhoto": false,
+					"isMustVideo": false,
+					"isMustRemark": false,
+					"probleTypeId": 2,
+					"probleTypeName": "ព័ត៌មានអាសយដ្ឋានមិនលំអិតa",
+					"probleTypeSubjectCode": "08a",
+					"probleTypeSubjectId": 1149,
+					"probleTypeSubjectName": "08a",
+					"problemPieceClassify": null
+				  }
+				]
+			  },
+			  "外场-留仓件扫描": {
+				"url": "/bc/scanList/uploadVehicleRemainStorage",
+				"method": "POST",
+				"param": [
+				  {
+					"id": 12,
+					"waybillId": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-ce69100e475ded6",
+					"listId": "KHGJ042024-08-01 01:56:37",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": 5490883,
+					"scanNetworkContact": "0322423432",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ស្រុកហ្វ័សាន",
+					"scanNetworkProvince": "ខេត្តក្វាងទុង",
+					"uploadFailSum": null,
+					"abnormalPieceCode": "08b",
+					"opType": ",1,2,3,4,",
+					"localPaths": "/storage/emulated/0/Pictures/1720427134635 (2) (1) (2) (1).jpg,/storage/emulated/0/Pictures/1721631492980237.jpg,/storage/emulated/0/Pictures/1720408283879 (1) (1) (1).jpg",
+					"imgUrl": "osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686875487426842676_WA-ce69100e475ded6_wc_130_1722502616370_8527.jpg,osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686875491285602309_WA-ce69100e475ded6_wc_130_1722502617277_0890.jpg,osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686875495920308271_WA-ce69100e475ded6_wc_130_1722502618381_8997.jpg",
+					"insertTimestamp": 1722502605428,
+					"localVideoPath": null,
+					"localVideoThumbnail": null,
+					"videoPaths": null,
+					"probleDescription": null,
+					"isMustPhoto": false,
+					"isMustVideo": false,
+					"isMustRemark": false,
+					"probleTypeId": null,
+					"probleTypeName": null,
+					"probleTypeSubjectCode": null,
+					"probleTypeSubjectId": null,
+					"probleTypeSubjectName": null,
+					"problemPieceClassify": null,
+					"remainStorageTypeCode": "08b",
+					"remainStorageTypeId": 1202,
+					"remainStorageTypeName": "ព័ត៌មានអាសយដ្ឋានមិនត្រឹមត្រូវb",
+					"remainStorageDec": ""
+				  }
+				]
+			  },
+			  "内场-入仓扫描": {
+				"url": "/bc/scanList/uploadReceiptData",
+				"method": "POST",
+				"param": [
+				  {
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 11,
+					"isProtocol": 0,
+					"listId": "KHGJ0420240805105056857",
+					"salesmanCode": "00011122",
+					"salesmanId": "587286",
+					"salesmanName": "KHGJ04001",
+					"scanNetworkCity": "ស្រុកហ្វ័សាន",
+					"scanNetworkContact": "0322423432",
+					"scanNetworkProvince": "ខេត្តក្វាងទុង",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "91357d0dcf8991dcf7372d9eb5eb1887",
+					"scanTime": "${scanTime}",
+					"type": 0,
+					"userId": "5490883",
+					"waybillId": "${waybillId}",
+					"weightFlag": 0
+				  }
+				]
+			  },
+			  "内场-建包扫描": {
+				"url": "/bc/scanList/uploadPackData",
+				"method": "POST",
+				"param": [
+				  {
+					"detailList": [
+					  {
+						"listId": "PNHDP0320230810135546933",
+						"packageNumber": "${packageNumber}",
+						"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+						"scanTime": "${scanTime}",
+						"waybillId": "${waybillId}"
+					  }
+					],
+					"master": {
+					  "listId": "PNHDP0320230810135546933",
+					  "packageNumber": "${packageNumber}",
+					  "scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					  "scanTime": "${scanTime}"
+					}
+				  }
+				]
+			  },
+			  "内场-拆包扫描": {
+				"url": "/bc/scanList/uploadUnpackData",
+				"method": "POST",
+				"param": [
+				  {
+					"detailList": [
+					  {
+						"listId": "PNHDP0320230810135843734",
+						"packageNumber": "${packageNumber}",
+						"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+						"scanTime": "${scanTime}",
+						"waybillId": "${waybillId}"
+					  }
+					],
+					"master": {
+					  "listId": "PNHDP0320230810135843734",
+					  "packageNumber": "${packageNumber}",
+					  "scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					  "scanTime": "${scanTime}"
+					}
+				  }
+				]
+			  },
+			  "内场-集货到件": {
+				"url": "/bc/scanList/uploadArrivalData",
+				"method": "POST",
+				"param": [
+				  {
+					"arriveScanType": "1",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 1,
+					"listId": "PNHDP0320230807190927625",
+					"scanNetworkCity": "ខណ្ឌបឹងកេងកង",
+					"scanNetworkContact": "098899533",
+					"scanNetworkProvince": "ភ្នំពេញ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					"scanTime": "${scanTime}",
+					"scanTypeCode": "91",
+					"userId": "5560196",
+					"waybillId": "${waybillId}",
+					"weight": "5",
+					"weightFlag": 1
+				  }
+				]
+			  },
+			  "内场-装车发件": {
+				"url": "/bc/scanList/uploadLoadingSendData",
+				"method": "POST",
+				"param": [
+				  {
+					"carNumber": "",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 4,
+					"listId": "PNHDP2520230524082144121",
+					"nextStopCode": "TEST111",
+					"nextStopId": "1205283",
+					"nextStopName": "测试优化111",
+					"nextStopType": "网点",
+					"nextStopTypeId": "336",
+					"scanNetworkCity": "ខណ្ឌសែនសុខ",
+					"scanNetworkContact": "098899539",
+					"scanNetworkProvince": "ភ្នំពេញ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "ff5a4b9dd5a796d5b14e2b6a7d182d9c",
+					"scanTime": "${scanTime}",
+					"scanType": "1",
+					"taskCode": "${taskCode}",
+					"transportTypeCode": "3",
+					"transportTypeId": "4",
+					"transportTypeName": "ByCar",
+					"userId": "5469326",
+					"waybillId": "${waybillId}",
+					"waybillInputType": "1"
+				  }
+				]
+			  },
+			  "内场-卸车到件": {
+				"url": "/bc/scanList/uploadUnloadingArrivalData",
+				"method": "POST",
+				"param": [
+				  {
+					"carNumber": "",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 7,
+					"listId": "PNHDP2520230524082330253",
+					"networkId": "301181",
+					"scanNetworkCity": "ខណ្ឌសែនសុខ",
+					"scanNetworkContact": "098899539",
+					"scanNetworkProvince": "ភ្នំពេញ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "ff5a4b9dd5a796d5b14e2b6a7d182d9c",
+					"scanTime": "${scanTime}",
+					"scanType": "1",
+					"scanTypeCode": "92",
+					"taskCode": "${taskCode}",
+					"transportTypeCode": "3",
+					"transportTypeId": "4",
+					"transportTypeName": "ByCar",
+					"userId": "5469326",
+					"waybillId": "${waybillId}",
+					"waybillInputType": "1",
+					"weightFlag": 0
+				  }
+				]
+			  },
+			  "内场-封发车扫描": {
+				"url": "/bc/scanList/uploadPackSendData",
+				"method": "POST",
+				"param": [
+				  {
+					"carNumber": "",
+					"carSignNumber": "${carSignNumber}",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 2,
+					"listId": "PNHDP0320230810141320191",
+					"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					"scanTime": "${scanTime}",
+					"taskNo": "${taskCode}",
+					"userId": "5560196"
+				  }
+				]
+			  },
+			  "内场-到解车扫描": {
+				"url": "/bc/scanList/uploadUnCarData",
+				"method": "POST",
+				"param": [
+				  {
+					"carNumber": "",
+					"carSignNumber": "${carSignNumber}",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 1,
+					"listId": "PNHDP0320230810141939461",
+					"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					"scanTime": "${scanTime}",
+					"taskCode": "${taskCode}",
+					"userId": "5560196"
+				  }
+				]
+			  },
+			  "内场-问题件扫描": {
+				"url": "/bc/scanList/uploadAbnormalPieceData",
+				"method": "POST",
+				"param": [
+				  {
+					"probleTypeId": "2",
+					"scanNetworkProvince": "ភ្នំពេញ",
+					"probleDescription": "",
+					"probleTypeSubjectCode": "02",
+					"probleTypeName": "ផ្សេងៗ",
+					"scanTime": "${scanTime}",
+					"scanNetworkTypeId": "336",
+					"abnormalPieceCode": "02",
+					"listId": "PNHDP0320230810142152181",
+					"probleTypeSubjectId": 864,
+					"probleTypeSubjectName": "ផ្សេងៗ",
+					"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					"paths": "osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686874681868816435_WA-ce69100e475ded6_wc_120_1722502424183_4255.jpg,osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686874686289612828_WA-ce69100e475ded6_wc_120_1722502425285_2993.jpg,osaforever/lite-ylappbc/PROBLEM_REGISTER/20240801/686874692790784011_WA-ce69100e475ded6_wc_120_1722502426704_9740.jpg",
+					"scanNetworkContact": "098899533",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkCity": "ខណ្ឌបឹងកេងកង",
+					"waybillNo": "${waybillId}"
+				  }
+				]
+			  },
+			  "内场-留仓件入仓": {
+				"url": "/bc/scanList/uploadVehicleRemainStorage",
+				"method": "POST",
+				"param": [
+				  {
+					"scanNetworkProvince": "ភ្នំពេញ",
+					"remainStorageDec": "",
+					"scanTime": "${scanTime}",
+					"scanNetworkTypeId": "336",
+					"remainScanType": "1",
+					"listId": "PNHDP0320230810142328522",
+					"imgUrl": "",
+					"remainStorageTypeCode": "08",
+					"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					"scanNetworkContact": "098899533",
+					"remainStorageTypeName": "បញ្ញើរហួសតំបន់",
+					"waybillId": "${waybillId}",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkCity": "ខណ្ឌបឹងកេងកង",
+					"remainStorageTypeId": "867"
+				  }
+				]
+			  },
+			  "内场-出仓扫描": {
+				"url": "/bc/scanList/uploadDeliveryOutStockData",
+				"method": "POST",
+				"param": [
+				  {
+					"deliveryBy": "587376",
+					"deliveryCode": "44423444",
+					"deliveryName": "邓网点",
+					"hasDelete": false,
+					"hasUpload": false,
+					"id": 1,
+					"isTownshipArticles": "0",
+					"listId": "PNHDP0320230810142450784",
+					"scanNetworkCity": "ខណ្ឌបឹងកេងកង",
+					"scanNetworkContact": "098899533",
+					"scanNetworkProvince": "ភ្នំពេញ",
+					"scanNetworkTypeId": "336",
+					"scanNetworkTypeName": "网点",
+					"scanPda": "13b84b37d38dd7fd3ceb8649334c26a8",
+					"scanTime": "${scanTime}",
+					"userId": "5560196",
+					"waybillId": "${waybillId}"
+				  }
+				]
+			  },
+			  "外场-出仓扫描": {
+				"url": "/bc/scanList/uploadDeliveryOutStockData",
+				"method": "POST",
+				"param": [
+				  {
+					"waybillId": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-b6ba979e4e5d69f",
+					"listId": "TTTDP22023-05-05 14:39:52",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": "5525234",
+					"scanNetworkContact": "0231232114",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ក្រុងកំពង់ចាម",
+					"scanNetworkProvince": "ខេត្តកំពង់ចាម",
+					"uploadFailSum": null,
+					"deliveryBy": "5469326",
+					"deliveryCode": "44422444",
+					"deliveryName": "赵桑",
+					"deliveryMobile": null,
+					"scanSourceCode": null,
+					"scanSourceName": null
+				  }
+				]
+			  },
+			  "外场-签收扫描": {
+				"url": "/bc/scanList/uploadSigningData",
+				"method": "POST",
+				"param": [
+				  {
+					"id": null,
+					"waybillId": "${waybillId}",
+					"scanTime": "${scanTime}",
+					"scanPda": "WA-b6ba979e4e5d69f",
+					"listId": "TTTDP22023-05-05 14:41:34",
+					"uploadTime": null,
+					"hasUpload": false,
+					"hasDelete": false,
+					"userId": null,
+					"scanNetworkContact": "0231232114",
+					"scanNetworkTypeName": "网点",
+					"scanNetworkTypeId": "336",
+					"scanNetworkCity": "ក្រុងកំពង់ចាម",
+					"scanNetworkProvince": "ខេត្តកំពង់ចាម",
+					"uploadFailSum": null,
+					"deliveryBy": null,
+					"deliveryCode": null,
+					"deliveryName": null,
+					"deliveryMobile": "598663698",
+					"scanSourceCode": null,
+					"scanSourceName": null,
+					"signId": "70",
+					"signCode": "1",
+					"signName": "本人签收",
+					"signer": "邓网点",
+					"expressCabinet": null,
+					"stationContact": null,
+					"partnerName": null,
+					"sigPicUrl": "osaforever/lite-ylappbc/SIGNING_SCAN_LIST/20240805/688235726621376566_WA-ce69100e475ded6_wc_100_1722826922651_6917.jpg,osaforever/lite-ylappbc/SIGNING_SCAN_LIST/20240805/688235729213456422_WA-ce69100e475ded6_wc_100_1722826923238_5152.jpg,osaforever/lite-ylappbc/SIGNING_SCAN_LIST/20240805/688235732816363569_WA-ce69100e475ded6_wc_100_1722826924112_9513.jpg",
+					"electronicSignaturePicUrl": "saforever/lite-ylappbc/SIGNING_SCAN_LIST/20240805/688235677908729879_WA-ce69100e475ded6_wc_100_1722826910933_0871.jpg",
+					"signType": "1",
+					"paidModeCode": "01",
+					"paidModeId": "27",
+					"paidModeName": "现金支付"
+				  }
+				]
+			  }
+			}
+		  }
+
+}
+      

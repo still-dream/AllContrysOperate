@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东南亚-中心操作-轨迹扫描</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%233370ff'/%3E%3Cstop offset='100%25' style='stop-color:%237b61ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='62' font-size='36' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'%3ESE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="png/J&Tlogo.png" alt="J&T Logo">
+            <h1>东南亚-中心操作-轨迹扫描</h1>
+        </div>
+
+        <div id="countryPage" class="page active">
+            <div class="country-grid">
+                <div class="country-card" onclick="App.selectCountry('indonesia')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/indonesia.png" alt="印尼国旗"></span>
+                    </div>
+                    <span class="country-code">ID</span>
+                    <span class="chinese-name">印尼</span>
+                    <span class="english-name">Indonesia</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('malaysia')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/malaysia.png" alt="马来西亚国旗"></span>
+                    </div>
+                    <span class="country-code">MY</span>
+                    <span class="chinese-name">马来</span>
+                    <span class="english-name">Malaysia</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('thailand')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/thailand.png" alt="泰国国旗"></span>
+                    </div>
+                    <span class="country-code">TH</span>
+                    <span class="chinese-name">泰国</span>
+                    <span class="english-name">Thailand</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('vietnam')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/vietnam.png" alt="越南国旗"></span>
+                    </div>
+                    <span class="country-code">VN</span>
+                    <span class="chinese-name">越南</span>
+                    <span class="english-name">Vietnam</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('philippines')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/philippines.png" alt="菲律宾国旗"></span>
+                    </div>
+                    <span class="country-code">PH</span>
+                    <span class="chinese-name">菲律宾</span>
+                    <span class="english-name">Philippines</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('singapore')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/singapore.png" alt="新加坡国旗"></span>
+                    </div>
+                    <span class="country-code">SG</span>
+                    <span class="chinese-name">新加坡</span>
+                    <span class="english-name">Singapore</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('laos')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/laos.png" alt="老挝国旗"></span>
+                    </div>
+                    <span class="country-code">LA</span>
+                    <span class="chinese-name">老挝</span>
+                    <span class="english-name">Laos</span>
+                </div>
+                <div class="country-card" onclick="App.selectCountry('cambodia')">
+                    <div class="flag-container">
+                        <span class="flag"><img src="png/cambodia.png" alt="柬埔寨国旗"></span>
+                    </div>
+                    <span class="country-code">KH</span>
+                    <span class="chinese-name">柬埔寨</span>
+                    <span class="english-name">Cambodia</span>
+                </div>
+            </div>
+
+            <div id="announcementBar" class="announcement-bar">
+                <span class="announcement-icon">📢</span>
+                <div class="announcement-content">
+                    <p><strong>当前进度：</strong>已完成：泰国、马来、越南、新加坡、柬埔塞、老挝，待完成：印尼、菲律宾</p>
+                    <p><strong>重要提示：</strong>当前登录账号只能用默认密码</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="scanPage" class="page">
+            <button class="back-btn" onclick="App.goBack()">
+                <span>←</span> 返回国家选择
+            </button>
+
+            <div class="scan-form">
+                <div class="country-info" id="countryInfo">
+                    <span class="flag" id="selectedFlag">
+                        <img id="selectedFlagImg" src="png/singapore.png" alt="所选国家国旗">
+                    </span>
+                    <span class="name" id="selectedName">新加坡 Singapore</span>
+                </div>
+
+                <div id="tokenDebug" class="hidden">
+                    <h4>🔑 Token调试</h4>
+                    <p>当前Token: <span id="currentTokenDisplay">未登录</span></p>
+                </div>
+
+                <div class="platform-link-box">
+                    <span class="link-icon">🔗</span>
+                    <span class="link-label">客渠造单平台：</span>
+                    <a href="http://10.66.102.107:8086/index.html" target="_blank" class="platform-link">
+                        http://10.66.102.107:8086/index.html
+                    </a>
+                </div>
+
+                <div id="accountFields">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="account">账号</label>
+                            <input type="text" id="account" placeholder="请输入账号">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">密码</label>
+                            <input type="password" id="password" placeholder="请输入密码">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="waybillId">运单号</label>
+                    <input type="text" id="waybillId" placeholder="请输入或粘贴运单号">
+                </div>
+
+                <div class="form-group">
+                    <label for="scanType">扫描类型</label>
+                    <select id="scanType" disabled>
+                        <option value="">请选择扫描类型</option>
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button class="execute-btn btn-login" id="loginBtn" onclick="App.executeLogin()">
+                        登录
+                    </button>
+                    <button class="execute-btn" id="executeBtn" onclick="App.executeScan()" disabled>
+                        执行扫描
+                    </button>
+                </div>
+            </div>
+
+            <div class="result-section" id="resultSection">
+                <h3>扫描结果</h3>
+                <div class="status-badge pending" id="statusBadge">
+                    <span>等待执行...</span>
+                </div>
+
+                <div id="requestBox" class="result-box hidden">
+                    <h4>请求内容</h4>
+                    <pre id="requestContent"></pre>
+                </div>
+
+                <div id="responseBox" class="result-box hidden">
+                    <h4>响应内容</h4>
+                    <pre id="responseContent"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/md5.js?v=1"></script>
+    <script src="js/config.js?v=1"></script>
+    <script src="js/api.js?v=1"></script>
+    <script src="js/ui.js?v=1"></script>
+    <script src="js/app.js?v=1"></script>
+</body>
+</html>

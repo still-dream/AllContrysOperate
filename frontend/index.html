@@ -93,79 +93,81 @@
 
         <div id="scanPage" class="page">
             <button class="back-btn" onclick="App.goBack()">
-                <span>←</span> 返回国家选择
+                <span>⬅️</span> 返回国家选择
             </button>
 
-            <div class="scan-form">
-                <div class="country-info" id="countryInfo">
-                    <span class="flag" id="selectedFlag">
-                        <img id="selectedFlagImg" src="png/singapore.png" alt="所选国家国旗">
-                    </span>
-                    <span class="name" id="selectedName">新加坡 Singapore</span>
-                </div>
+            <div class="scan-layout">
+                <div class="scan-form">
+                    <div class="country-info" id="countryInfo">
+                        <span class="flag" id="selectedFlag">
+                            <img id="selectedFlagImg" src="png/singapore.png" alt="所选国家国旗">
+                        </span>
+                        <span class="name" id="selectedName">新加坡 Singapore</span>
+                    </div>
 
-                <div id="tokenDebug" class="hidden">
-                    <h4>🔑 Token调试</h4>
-                    <p>当前Token: <span id="currentTokenDisplay">未登录</span></p>
-                </div>
+                    <div id="tokenDebug" class="hidden">
+                        <h4>🔑 Token调试</h4>
+                        <p>当前Token: <span id="currentTokenDisplay">未登录</span></p>
+                    </div>
 
-                <div class="platform-link-box">
-                    <span class="link-icon">🔗</span>
-                    <span class="link-label">客渠造单平台：</span>
-                    <a href="http://10.66.102.107:8086/index.html" target="_blank" class="platform-link">
-                        http://10.66.102.107:8086/index.html
-                    </a>
-                </div>
+                    <div class="platform-link-box">
+                        <span class="link-icon">🔗</span>
+                        <span class="link-label">客渠造单平台：</span>
+                        <a href="http://10.66.102.107:8086/index.html" target="_blank" class="platform-link">
+                            http://10.66.102.107:8086/index.html
+                        </a>
+                    </div>
 
-                <div id="accountFields">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="account">账号</label>
-                            <input type="text" id="account" placeholder="请输入账号">
+                    <div id="accountFields">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="account">账号</label>
+                                <input type="text" id="account" placeholder="请输入账号">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密码</label>
+                                <input type="password" id="password" placeholder="请输入密码">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="password">密码</label>
-                            <input type="password" id="password" placeholder="请输入密码">
-                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="waybillId">运单号</label>
+                        <input type="text" id="waybillId" placeholder="请输入或粘贴运单号">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scanType">扫描类型</label>
+                        <select id="scanType" disabled>
+                            <option value="">请选择扫描类型</option>
+                        </select>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="execute-btn btn-login" id="loginBtn" onclick="App.executeLogin()">
+                            登录
+                        </button>
+                        <button class="execute-btn" id="executeBtn" onclick="App.executeScan()" disabled>
+                            执行扫描
+                        </button>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="waybillId">运单号</label>
-                    <input type="text" id="waybillId" placeholder="请输入或粘贴运单号">
-                </div>
+                <div class="result-section" id="resultSection">
+                    <h3>扫描结果</h3>
+                    <div class="status-badge pending" id="statusBadge">
+                        <span>等待执行...</span>
+                    </div>
 
-                <div class="form-group">
-                    <label for="scanType">扫描类型</label>
-                    <select id="scanType" disabled>
-                        <option value="">请选择扫描类型</option>
-                    </select>
-                </div>
+                    <div id="requestBox" class="result-box hidden">
+                        <h4>请求内容</h4>
+                        <pre id="requestContent"></pre>
+                    </div>
 
-                <div class="btn-group">
-                    <button class="execute-btn btn-login" id="loginBtn" onclick="App.executeLogin()">
-                        登录
-                    </button>
-                    <button class="execute-btn" id="executeBtn" onclick="App.executeScan()" disabled>
-                        执行扫描
-                    </button>
-                </div>
-            </div>
-
-            <div class="result-section" id="resultSection">
-                <h3>扫描结果</h3>
-                <div class="status-badge pending" id="statusBadge">
-                    <span>等待执行...</span>
-                </div>
-
-                <div id="requestBox" class="result-box hidden">
-                    <h4>请求内容</h4>
-                    <pre id="requestContent"></pre>
-                </div>
-
-                <div id="responseBox" class="result-box hidden">
-                    <h4>响应内容</h4>
-                    <pre id="responseContent"></pre>
+                    <div id="responseBox" class="result-box hidden">
+                        <h4>响应内容</h4>
+                        <pre id="responseContent"></pre>
+                    </div>
                 </div>
             </div>
         </div>

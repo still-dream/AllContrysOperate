@@ -61,7 +61,7 @@ var App = (function() {
         }
 
         UI.setLoginButton(true);
-        UI.setStatus('pending', '正在登录...');
+        UI.setStatus('pending', '正在登录');
 
         var loginConfig = currentCountry.login;
         var fullUrl = currentCountry.baseUrl + loginConfig.url;
@@ -163,7 +163,7 @@ var App = (function() {
         }
 
         UI.setScanButton(true);
-        UI.setStatus('pending', '正在请求...');
+        UI.setStatus('pending', '正在请求');
 
         var scanTime = Api.getCountryTime();
 

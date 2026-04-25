@@ -6,7 +6,7 @@ var UI = (function() {
     function resetResult() {
         var statusBadge = el('statusBadge');
         statusBadge.className = 'status-badge pending';
-        statusBadge.innerHTML = '<span>等待执行...</span>';
+        statusBadge.innerHTML = '<span>等待执行</span>';
         el('requestBox').classList.add('hidden');
         el('responseBox').classList.add('hidden');
     }
@@ -42,7 +42,7 @@ var UI = (function() {
         var loginBtn = el('loginBtn');
         loginBtn.disabled = loading;
         if (loading) {
-            loginBtn.innerHTML = '<span class="loading-spinner"></span>登录中...';
+            loginBtn.innerHTML = '<span class="loading-spinner"></span>登录中';
         } else {
             loginBtn.innerHTML = '登录';
         }
@@ -52,7 +52,7 @@ var UI = (function() {
         var executeBtn = el('executeBtn');
         executeBtn.disabled = loading;
         if (loading) {
-            executeBtn.innerHTML = '<span class="loading-spinner"></span>执行中...';
+            executeBtn.innerHTML = '<span class="loading-spinner"></span>执行中';
         } else {
             executeBtn.innerHTML = '执行扫描';
         }
